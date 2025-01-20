@@ -1,0 +1,605 @@
+id,question_id,choice_text,is_correct
+1,1,print(“Hello World!”),1
+2,1,"print(“Hello, World”)",0
+3,1,System.out.println(“HelloWorld!”),0
+4,1,console.log(“Hello World”),0
+5,2,System.out.println(10 + 9);,0
+6,2,"print(“10 + 9 =”, 10 + 9)",0
+7,2,X = 10 + 9; print(X),1
+8,2,"X = 10 + 9; print(X, end=’’)",0
+9,3,raio = float(input()); area = 3.14159 * (raio*raio); print(area),0
+10,3,raio = float(input()); area = 3.14159 * raio; print(area),0
+11,3,raio = float(input()); area = 3.14159 * (raio**2); print(area),1
+12,3,raio = int(input()); area = 3.14159 * (raio**2); print(area),0
+13,4,A = input(); B = input(); SOMA = A + B; print(SOMA),0
+14,4,A = int(input()); B = int(input()); SOMA = A + B; print(f”SOMA: {SOMA}”),0
+15,4,A = int(input()); B = int(input()); SOMA = A + B; print(SOMA),1
+16,4,A = int(input()); B = int(input()); SOMA = A - B; print(SOMA),0
+17,5,"A = int(input()); B = int(input()); PROD = A * B; print(“PROD =”, PROD)",1
+18,5,A = int(input()); B = int(input()); PROD = A * B; print(PROD),0
+19,5,"A = input(); B = input(); PROD = A * B; print(“PROD =”, PROD)",0
+20,5,"A = int(input()); B = int(input()); PROD = A + B; print(“PROD =”, PROD)",0
+21,6,A = float(input()); B = float(input()); MEDIA = (A7.5 + B3.5) / 11; print(f”MÉDIA = {MEDIA:.1f}”),0
+22,6,A = int(input()); B = int(input()); MEDIA = (A3.5 + B7.5) / 11; print(f”MÉDIA = {MEDIA:.1f}”),0
+23,6,A = float(input()); B = float(input()); MEDIA = (A + B) / 2; print(f”MÉDIA = {MEDIA:.1f}”),0
+24,6,A = float(input()); B = float(input()); MEDIA = (A3.5 + B7.5) / 11; print(f”MÉDIA = {MEDIA:.1f}”),1
+25,7,A = float(input()); B = float(input()); C = float(input()); MEDIA = (A + B + C) / 3; print(f”MÉDIA = {MEDIA:.1f}”),0
+26,7,A = float(input()); B = float(input()); C = float(input()); MEDIA = (A2 + B3 + C*5) / 10; print(f”MÉDIA = {MEDIA:.1f}”),1
+27,7,A = int(input()); B = int(input()); C = int(input()); MEDIA = (A2 + B3 + C*5) / 10; print(f”MÉDIA = {MEDIA:.1f}”),0
+28,7,A = float(input()); B = float(input()); C = float(input()); MEDIA = (A5 + B3 + C*2) / 10; print(f”MÉDIA = {MEDIA:.1f}”),0
+29,8,"A = int(input()); B = int(input()); C = int(input()); D = int(input()); DIFERENCA = (A + B - C * D); print(“DIFERENCA =”, DIFERENCA)",0
+30,8,"A = int(input()); B = int(input()); C = int(input()); D = int(input()); DIFERENCA = (A * B + C * D); print(“DIFERENCA =”, DIFERENCA)",0
+31,8,"A = int(input()); B = int(input()); C = int(input()); D = int(input()); DIFERENCA = (A * B - C * D); print(“DIFERENCA =”, DIFERENCA)",1
+32,8,"A = int(input()); B = int(input()); C = int(input()); D = int(input()); DIFERENCA = (A * B - C - D); print(“DIFERENCA =”, DIFERENCA)",0
+33,9,num = int(input()); horas = int(input()); valor_hora = float(input()); salario = horas + valor_hora; print(f”NUMBER = {num}\nSALARY = U$ {salario:.2f}”),0
+34,9,num = int(input()); horas = int(input()); valor_hora = int(input()); salario = horas * valor_hora; print(f”NUMBER = {num}\nSALARY = U$ {salario:.2f}”) 0,0
+35,9,num = int(input()); horas = int(input()); valor_hora = float(input()); salario = horas * valor_hora; print(f”NUMBER = {num}\nSALARY = U$ {salario:.2f}”),1
+36,9,num = float(input()); horas = int(input()); valor_hora = float(input()); salario = horas * valor_hora; print(f”NUMBER = {num}\nSALARY = U$ {salario:.2f}”),0
+37,10,nome = input(); salario_fixo = float(input()); vendas = float(input()); total = salario_fixo + vendas; print(f”TOTAL = R$ {total:.2f}”),0
+38,10,nome = input(); salario_fixo = float(input()); vendas = float(input()); total = salario_fixo * 0.15 + vendas; print(f”TOTAL = R$ {total:.2f}”),0
+39,10,nome = input(); salario_fixo = float(input()); vendas = float(input()); total = vendas * 0.15; print(f”TOTAL = R$ {total:.2f}”),0
+40,10,nome = input(); salario_fixo = float(input()); vendas = float(input()); total = salario_fixo + (vendas * 0.15); print(f”TOTAL = R$ {total:.2f}”),1
+41,11,"cod1, qtd1, valor1 = input().split(); cod2, qtd2, valor2 = input().split(); total = int(qtd1) * int(valor1) + int(qtd2) * int(valor2); print(f”VALOR A PAGAR: R$ {total:.2f}”)",0
+42,11,"cod1, qtd1, valor1 = input().split(); cod2, qtd2, valor2 = input().split(); total = int(qtd1) * float(valor1) + int(qtd2) * float(valor2); print(f”VALOR A PAGAR: R$ {total:.2f}”)",1
+43,11,"cod1, qtd1, valor1 = input().split(); cod2, qtd2, valor2 = input().split(); total = float(qtd1) * float(valor1) + float(qtd2) * float(valor2); print(f”VALOR A PAGAR: R$ {total:.2f}”)",0
+44,11,"cod1, qtd1, valor1 = input().split(); cod2, qtd2, valor2 = input().split(); total = int(qtd1) + int(qtd2); print(f”VALOR A PAGAR: R$ {total:.2f}”)",0
+45,12,R = float(input()); pi = 3.14159; volume = (4/3) * pi * (R**2); print(f”VOLUME = {volume:.3f}”),0
+46,12,R = int(input()); pi = 3.14159; volume = (4/3) * pi * (R**3); print(f”VOLUME = {volume:.3f}”),0
+47,12,R = float(input()); pi = 3.14159; volume = (4/3) * pi * (R*R); print(f”VOLUME = {volume:.3f}”),0
+48,12,R = float(input()); pi = 3.14159; volume = (4/3) * pi * (R**3); print(f”VOLUME = {volume:.3f}”),1
+49,13,"A, B, C = map(int, input().split()); pi = 3.14159; print(f”TRIANGULO: {(A * C / 2):.3f}\nCIRCULO: {(pi * C2):.3f}\nTRAPEZIO: {((A + B) * C / 2):.3f}\nQUADRADO: {(B2):.3f}\nRETANGULO: {(A * B):.3f}”)",0
+50,13,"A, B, C = map(float, input().split()); pi = 3.14159; print(f”TRIANGULO: {(A + C / 2):.3f}\nCIRCULO: {(pi * C2):.3f}\nTRAPEZIO: {((A + B) * C / 2):.3f}\nQUADRADO: {(B2):.3f}\nRETANGULO: {(A * B):.3f}”)",0
+51,13,"A, B, C = map(float, input().split()); pi = 3.14159; print(f”TRIANGULO: {(A * C / 2):.3f}\nCIRCULO: {(pi * C2):.3f}\nTRAPEZIO: {((A + B) * C / 2):.3f}\nQUADRADO: {(B2):.3f}\nRETANGULO: {(A * B):.3f}”)",1
+52,13,"A, B, C = map(float, input().split()); pi = 3.14159; print(f”TRIANGULO: {(A * C / 2):.3f}\nCIRCULO: {(pi * C):.3f}\nTRAPEZIO: {((A + B) * C / 2):.3f}\nQUADRADO: {(B**2):.3f}\nRETANGULO: {(A * B):.3f}”)",0
+53,14,distancia = float(input()); combustivel = float(input()); consumo = distancia / combustivel; print(f”{consumo:.3f} km/l”),1
+54,14,distancia = int(input()); combustivel = int(input()); consumo = distancia / combustivel; print(f”{consumo:.3f} km/l”),0
+55,14,distancia = float(input()); combustivel = float(input()); consumo = combustivel / distancia; print(f”{consumo:.3f} km/l”),0
+56,14,distancia = float(input()); combustivel = float(input()); consumo = distancia * combustivel; print(f”{consumo:.3f} km/l”),0
+57,15,distancia = int(input()); tempo = distancia / 2; print(f”{tempo} minutos”),0
+58,15,distancia = int(input()); tempo = distancia * 2; print(f”{tempo} minutos”),1
+59,15,distancia = int(input()); tempo = distancia * 60; print(f”{tempo} minutos”),0
+60,15,distancia = int(input()); tempo = distancia * 1.5; print(f”{tempo} minutos”),0
+61,16,tempo = int(input()); velocidade = int(input()); distancia = tempo * velocidade; litros = distancia / 12; print(f”{litros:.3f}”),1
+62,16,tempo = int(input()); velocidade = int(input()); distancia = tempo + velocidade; litros = distancia / 12; print(f”{litros:.3f}”),0
+63,16,tempo = int(input()); velocidade = int(input()); distancia = tempo * velocidade; litros = distancia * 12; print(f”{litros:.3f}”),0
+64,16,tempo = int(input()); velocidade = int(input()); litros = tempo * velocidade / 12; print(f”{litros:.2f}”),0
+65,17,"valor = int(input()); print(valor); for nota in [100, 50, 20, 10, 5, 2, 1]: print(f”{valor // nota} nota(s) de R$ {nota},00”); valor %= nota",1
+66,17,"valor = int(input()); for nota in [100, 50, 20, 10, 5, 2, 1]: print(f”{valor} nota(s) de R$ {nota},00”); valor -= nota",0
+67,17,"valor = int(input()); for nota in [100, 50, 20, 10, 5, 2, 1]: print(f”{valor % nota} nota(s) de R$ {nota},00”); valor //= nota",0
+68,17,"valor = int(input()); for nota in [100, 50, 20, 10, 5, 2, 1]: print(f”{valor} nota(s) de R$ {nota},00”); valor += nota",0
+69,18,segundos = int(input()); horas = segundos // 3600; segundos %= 3600; minutos = segundos // 60; segundos %= 60; print(f”{horas}:{minutos}:{segundos}”),1
+70,18,segundos = int(input()); horas = segundos // 3600; minutos = segundos // 60; print(f”{horas}:{minutos}:{segundos}”),0
+71,18,segundos = int(input()); horas = segundos / 3600; minutos = segundos / 60; segundos %= 60; print(f”{horas}:{minutos}:{segundos}”),0
+72,18,segundos = int(input()); horas = segundos % 3600; minutos = segundos // 60; segundos %= 60; print(f”{horas}:{minutos}:{segundos}”),0
+73,19,dias = int(input()); anos = dias // 365; dias %= 365; meses = dias // 30; dias %= 30; print(f”{anos} ano(s)\n{meses} mes(es)\n{dias} dia(s)”),1
+74,19,dias = int(input()); anos = dias / 365; meses = dias / 30; dias %= 30; print(f”{anos} ano(s)\n{meses} mes(es)\n{dias} dia(s)”),0
+75,19,dias = int(input()); anos = dias // 365; meses = dias // 30; dias %= 30; print(f”{anos} ano(s)\n{meses} mes(es)\n{dias} dia(s)”),0
+76,19,dias = int(input()); anos = dias // 365; dias %= 30; meses = dias // 30; print(f”{anos} ano(s)\n{meses} mes(es)\n{dias} dia(s)”),0
+77,20,"valor = float(input()); notas = [100, 50, 20, 10, 5, 2]; moedas = [1, 0.50, 0.25, 0.10, 0.05, 0.01]; print(“NOTAS:”); for nota in notas: print(f”{int(valor // nota)} nota(s) de R$ {nota:.2f}”); valor %= nota; print(“MOEDAS:”); for moeda in moedas: print(f”{int(valor // moeda)} moeda(s) de R$ {moeda:.2f}”); valor %= moeda",1
+78,20,"valor = float(input()); notas = [100, 50, 20, 10, 5, 2]; moedas = [1, 0.50, 0.25, 0.10, 0.05, 0.01]; print(“NOTAS:”); for nota in notas: print(f”{int(valor % nota)} nota(s) de R$ {nota:.2f}”); valor %= nota; print(“MOEDAS:”); for moeda in moedas: print(f”{int(valor // moeda)} moeda(s) de R$ {moeda:.2f}”); valor %= moeda",0
+79,20,"valor = float(input()); notas = [100, 50, 20, 10, 5, 2]; moedas = [1, 0.50, 0.25, 0.10, 0.05, 0.01]; print(“NOTAS:”); for nota in notas: print(f”{int(valor // nota)} nota(s) de R$ {nota:.2f}”); valor %= nota; print(“MOEDAS:”); for moeda in moedas: print(f”{int(valor % moeda)} moeda(s) de R$ {moeda:.2f}”); valor %= moeda",0
+80,20,"valor = float(input()); notas = [100, 50, 20, 10, 5, 2]; moedas = [1, 0.50, 0.25, 0.10, 0.05, 0.01]; print(“NOTAS:”); for nota in notas: print(f”{int(valor % nota)} nota(s) de R$ {nota:.2f}”); valor %= nota; print(“MOEDAS:”); for moeda in moedas: print(f”{int(valor % moeda)} moeda(s) de R$ {moeda:.2f}”); valor %= moeda",0
+81,21,"A, B, C, D = map(int, input().split()); print(“Valores aceitos” if B > C and D > A and (C + D) > (A + B) and C > 0 and D > 0 and A % 2 == 0 else “Valores nao aceitos”)",1
+82,21,"A, B, C, D = map(int, input().split()); print(“Valores aceitos” if B > C and D > A and (C + D) < (A + B) and C > 0 and D > 0 and A % 2 == 0 else “Valores nao aceitos”)",0
+83,21,"A, B, C, D = map(int, input().split()); print(“Valores aceitos” if B > C or D > A and (C + D) > (A + B) and C > 0 and D > 0 and A % 2 == 0 else “Valores nao aceitos”)",0
+84,21,"A, B, C, D = map(int, input().split()); print(“Valores aceitos” if B > C and D > A and (C + D) > (A + B) and C > 0 and D > 0 else “Valores nao aceitos”)",0
+85,22,"A, B, C = map(float, input().split()); delta = B2 - 4AC; print(f”R1 = {(-B + delta0.5) / (2A):.5f}\nR2 = {(-B - delta**0.5) / (2A):.5f}” if A != 0 and delta >= 0 else “Impossivel calcular”)",1
+86,22,"A, B, C = map(float, input().split()); delta = B2 - 4AC; print(f”R1 = {(-B - delta0.5) / (2A):.5f}\nR2 = {(-B + delta**0.5) / (2A):.5f}” if delta >= 0 else “Impossivel calcular”)",0
+87,22,"A, B, C = map(float, input().split()); delta = B2 - 4AC; print(f”R1 = {(-B + delta0.5) / (2A):.5f}\nR2 = {(-B - delta**0.5) / (2A):.5f}” if delta >= 0 else “Impossivel calcular”)",0
+88,22,"A, B, C = map(float, input().split()); delta = B2 - 4AC; print(f”R1 = {(-B + delta0.5) / (2*A):.5f}”) if delta >= 0 else print(“Impossivel calcular”)",0
+89,23,"valor = float(input()); print(“Intervalo [0,25]” if 0 <= valor <= 25 else “Intervalo (25,50]” if 25 < valor <= 50 else “Intervalo (50,75]” if 50 < valor <= 75 else “Intervalo (75,100]” if 75 < valor <= 100 else “Fora de intervalo”)",1
+90,23,"valor = float(input()); print(“Intervalo [0,25]” if 0 < valor <= 25 else “Intervalo (25,50]” if 25 <= valor <= 50 else “Intervalo (50,75]” if 50 <= valor <= 75 else “Intervalo (75,100]” if 75 <= valor <= 100 else “Fora de intervalo”)",0
+91,23,"valor = float(input()); print(“Intervalo [0,25]” if 0 < valor < 25 else “Intervalo (25,50]” if 25 <= valor < 50 else “Intervalo (50,75]” if 50 <= valor < 75 else “Intervalo (75,100]” if 75 <= valor < 100 else “Fora de intervalo”)",0
+92,23,"valor = float(input()); print(“Intervalo [0,25]” if 0 <= valor <= 25 else “Intervalo (25,50]” if 25 < valor < 50 else “Intervalo (50,75]” if 50 < valor < 75 else “Intervalo (75,100]” if 75 < valor < 100 else “Fora de intervalo”)",0
+93,24,"valores = list(map(int, input().split())); ordenados = sorted(valores); print(*ordenados, sep=”\n”); print(); print(*valores, sep=”\n”)",1
+94,24,"valores = list(map(int, input().split())); ordenados = sorted(valores); print(*ordenados, sep=”\n”)",0
+95,24,"valores = list(map(int, input().split())); print(*valores, sep=”\n”); print(); print(*sorted(valores), sep=”\n”)",0
+96,24,"valores = list(map(int, input().split())); ordenados = sorted(valores); print(*valores, sep=”\n”); print(); print(*ordenados, sep=”\n”)",0
+97,25,"A, B = map(int, input().split()); print(“Sao Multiplos” if A % B == 0 or B % A == 0 else “Nao sao Multiplos”)",1
+98,25,"A, B = map(int, input().split()); print(“Sao Multiplos” if A % B == 0 and B % A == 0 else “Nao sao Multiplos”)",0
+99,25,"A, B = map(int, input().split()); print(“Sao Multiplos” if A % B != 0 and B % A != 0 else “Nao sao Multiplos”)",0
+100,25,"A, B = map(int, input().split()); print(“Sao Multiplos” if A * B == 0 else “Nao sao Multiplos”)",0
+101,26,"inicio, fim = map(int, input().split()); duracao = (fim - inicio) % 24 or 24; print(f”O JOGO DUROU {duracao} HORA(S)”)",1
+102,26,"inicio, fim = map(int, input().split()); duracao = (fim - inicio); print(f”O JOGO DUROU {duracao} HORA(S)”)",0
+103,26,"inicio, fim = map(int, input().split()); duracao = (fim + inicio) % 24; print(f”O JOGO DUROU {duracao} HORA(S)”)",0
+104,26,"inicio, fim = map(int, input().split()); duracao = (fim - inicio) % 24; print(f”O JOGO DUROU {duracao} HORA(S)”)",0
+105,27,"hi, mi, hf, mf = map(int, input().split()); inicio = hi * 60 + mi; fim = hf * 60 + mf; duracao = (fim - inicio) % (24 * 60) or (24 * 60); horas, minutos = divmod(duracao, 60); print(f”O JOGO DUROU {horas} HORA(S) E {minutos} MINUTO(S)”)",1
+106,27,"hi, mi, hf, mf = map(int, input().split()); inicio = hi * 60 + mi; fim = hf * 60 + mf; duracao = (fim - inicio); horas, minutos = divmod(duracao, 60); print(f”O JOGO DUROU {horas} HORA(S) E {minutos} MINUTO(S)”)",0
+107,27,"hi, mi, hf, mf = map(int, input().split()); duracao_horas = hf - hi; duracao_minutos = mf - mi; print(f”O JOGO DUROU {duracao_horas} HORA(S) E {duracao_minutos} MINUTO(S)”)",0
+108,27,"hi, mi, hf, mf = map(int, input().split()); duracao_horas = (hf - hi) % 24; duracao_minutos = (mf - mi) % 60; print(f”O JOGO DUROU {duracao_horas} HORA(S) E {duracao_minutos} MINUTO(S)”)",0
+109,28,"meses = [“January”, “February”, “March”, “April”, “May”, “June”, “July”, “August”, “September”, “October”, “November”, “December”]; n = int(input()); print(meses[n-1])",1
+110,28,n = int(input()); if n == 1: print(“January”); elif n == 2: print(“February”); elif n == 3: print(“March”); elif n == 4: print(“April”); elif n == 5: print(“May”); elif n == 6: print(“June”); elif n == 7: print(“July”); elif n == 8: print(“August”); elif n == 9: print(“September”); elif n == 10: print(“October”); elif n == 11: print(“November”); elif n == 12: print(“December”),0
+111,28,"n = int(input()); meses = [“January”, “February”, “March”, “April”, “May”, “June”, “July”, “August”, “September”, “October”, “November”, “December”]; print(meses[n])",0
+112,28,"n = int(input()); print([“January”, “February”, “March”, “April”, “May”, “June”, “July”, “August”, “September”, “October”, “November”, “December”][n])",0
+113,29,"for i in range(2, 101, 2): print(i)",1
+114,29,"for i in range(1, 101): if i % 2 == 0: print(i)",0
+115,29,"print(”\n”.join(str(i) for i in range(2, 101, 2)))",0
+116,29,"for i in range(1, 101, 2): print(i + 1)",0
+117,30,valores = [float(input()) for _ in range(6)]; print(f”{sum(1 for v in valores if v > 0)} valores positivos”),1
+118,30,valores = [float(input()) for _ in range(6)]; print(f”{len([v for v in valores if v > 0])} valores positivos”),0
+119,30,count = 0; for _ in range(6): if float(input()) > 0: count += 1; print(f”{count} valores positivos”),0
+120,30,valores = [float(input()) for _ in range(6)]; print(f”{sum(v > 0 for v in valores)} valores positivos”),0
+121,31,"d1, h1, m1, s1 = map(int, input().split()); d2, h2, m2, s2 = map(int, input().split()); t1 = d1 * 86400 + h1 * 3600 + m1 * 60 + s1; t2 = d2 * 86400 + h2 * 3600 + m2 * 60 + s2; delta = t2 - t1; dias, resto = divmod(delta, 86400); horas, resto = divmod(resto, 3600); minutos, segundos = divmod(resto, 60); print(f”{dias} dia(s)\n{horas} hora(s)\n{minutos} minuto(s)\n{segundos} segundo(s)”)",1
+122,31,"d1, h1, m1, s1 = map(int, input().split()); d2, h2, m2, s2 = map(int, input().split()); dias = d2 - d1; horas = h2 - h1; minutos = m2 - m1; segundos = s2 - s1; print(f”{dias} dia(s)\n{horas} hora(s)\n{minutos} minuto(s)\n{segundos} segundo(s)”)",0
+123,31,"d1, h1, m1, s1 = map(int, input().split()); d2, h2, m2, s2 = map(int, input().split()); t1 = d1 * 86400 + h1 * 3600 + m1 * 60 + s1; t2 = d2 * 86400 + h2 * 3600 + m2 * 60 + s2; delta = t1 - t2; dias, resto = divmod(delta, 86400); horas, resto = divmod(resto, 3600); minutos, segundos = divmod(resto, 60); print(f”{dias} dia(s)\n{horas} hora(s)\n{minutos} minuto(s)\n{segundos} segundo(s)”)",0
+124,31,"d1, h1, m1, s1 = map(int, input().split()); d2, h2, m2, s2 = map(int, input().split()); t1 = d1 * 86400 + h1 * 3600 + m1 * 60 + s1; t2 = d2 * 86400 + h2 * 3600 + m2 * 60 + s2; delta = abs(t2 - t1); dias = delta // 86400; resto = delta % 86400; horas = resto // 3600; minutos = resto % 3600 // 60; segundos = resto % 60; print(f”{dias} dia(s)\n{horas} hora(s)\n{minutos} minuto(s)\n{segundos} segundo(s)”)",0
+125,32,valores = [float(input()) for _ in range(6)]; positivos = [v for v in valores if v > 0]; print(f”{len(positivos)} valores positivos”); print(f”{sum(positivos)/len(positivos):.1f}”),1
+126,32,valores = [float(input()) for _ in range(6)]; positivos = [v for v in valores if v >= 0]; print(f”{len(positivos)} valores positivos”); print(f”{sum(positivos)/len(positivos):.1f}”),0
+127,32,valores = [float(input()) for _ in range(6)]; positivos = [v for v in valores if v > 0]; print(f”{len(positivos)} valores positivos”); print(f”{sum(positivos):.1f}”),0
+128,32,valores = [float(input()) for _ in range(6)]; print(f”{sum(1 for v in valores if v > 0)} valores positivos”); print(f”{sum(v for v in valores if v > 0):.1f}”),0
+129,33,valores = [int(input()) for _ in range(5)]; print(f”{sum(1 for v in valores if v % 2 == 0)} valores pares”),1
+130,33,valores = [int(input()) for _ in range(5)]; print(f”{len([v for v in valores if v % 2 == 0])} valores pares”),0
+131,33,valores = [int(input()) for _ in range(5)]; pares = [v for v in valores if v % 2 == 0]; print(f”{len(pares)} valores pares”),0
+132,33,count = 0; for _ in range(5): if int(input()) % 2 == 0: count += 1; print(f”{count} valores pares”),0
+133,34,valores = [int(input()) for _ in range(5)]; pares = sum(1 for v in valores if v % 2 == 0); impares = sum(1 for v in valores if v % 2 != 0); positivos = sum(1 for v in valores if v > 0); negativos = sum(1 for v in valores if v < 0); print(f”{pares} valor(es) par(es)”); print(f”{impares} valor(es) impar(es)”); print(f”{positivos} valor(es) positivo(s)”); print(f”{negativos} valor(es) negativo(s)”),1
+134,34,valores = [int(input()) for _ in range(5)]; pares = len([v for v in valores if v % 2 == 0]); impares = len([v for v in valores if v % 2 != 0]); positivos = len([v for v in valores if v > 0]); negativos = len([v for v in valores if v < 0]); print(f”{pares} valor(es) par(es)”); print(f”{impares} valor(es) impar(es)”); print(f”{positivos} valor(es) positivo(s)”); print(f”{negativos} valor(es) negativo(s)”),0
+135,34,"count = {“pares”: 0, “impares”: 0, “positivos”: 0, “negativos”: 0}; for _ in range(5): v = int(input()); if v % 2 == 0: count[“pares”] += 1; else: count[“impares”] += 1; if v > 0: count[“positivos”] += 1; elif v < 0: count[“negativos”] += 1; print(f”{count[‘pares’]} valor(es) par(es)”); print(f”{count[‘impares’]} valor(es) impar(es)”); print(f”{count[‘positivos’]} valor(es) positivo(s)”); print(f”{count[‘negativos’]} valor(es) negativo(s)”)",0
+136,34,valores = [int(input()) for _ in range(5)]; pares = sum(v % 2 == 0 for v in valores); impares = sum(v % 2 != 0 for v in valores); positivos = sum(v > 0 for v in valores); negativos = sum(v < 0 for v in valores); print(f”{pares} valor(es) par(es)”); print(f”{impares} valor(es) impar(es)”); print(f”{positivos} valor(es) positivo(s)”); print(f”{negativos} valor(es) negativo(s)”),0
+137,35,"X = int(input()); for i in range(1, X + 1, 2): print(i)",1
+138,35,"X = int(input()); for i in range(1, X): print(i if i % 2 != 0 else ‘’)",0
+139,35,"X = int(input()); for i in range(1, X + 2, 2): print(i)",0
+140,35,"X = int(input()); print(”\n”.join(str(i) for i in range(1, X + 1, 2)))",0
+141,36,X = int(input()); count = 0; while count < 6: if X % 2 != 0: print(X); count += 1; X += 1,1
+142,36,"X = int(input()); for i in range(X, X + 12, 2): print(i if i % 2 != 0 else ‘’)",0
+143,36,X = int(input()); for i in range(6): print(X + i if (X + i) % 2 != 0 else X + i + 1),0
+144,36,"X = int(input()); for i in range(X, X + 6): print(i if i % 2 != 0 else X + i)",0
+145,37,"X, Y = map(int, input().split()); print(sum(i for i in range(min(X, Y) + 1, max(X, Y)) if i % 2 != 0))",1
+146,37,"X, Y = map(int, input().split()); print(sum(i for i in range(min(X, Y), max(X, Y)) if i % 2 != 0))",0
+147,37,"X, Y = map(int, input().split()); print(sum(i for i in range(X, Y) if i % 2 != 0))",0
+148,37,"X, Y = map(int, input().split()); print(sum(i for i in range(min(X, Y), max(X, Y) + 1) if i % 2 != 0))",0
+149,38,N = int(input()); dentro = fora = 0; for _ in range(N): X = int(input()); if 10 <= X <= 20: dentro += 1; else: fora += 1; print(f”{dentro} in”); print(f”{fora} out”),1
+150,38,N = int(input()); dentro = 0; for _ in range(N): X = int(input()); if 10 <= X <= 20: dentro += 1; print(f”{dentro} in”); print(f”{N - dentro} out”),0
+151,38,N = int(input()); dentro = sum(1 for _ in range(N) if 10 <= int(input()) <= 20); print(f”{dentro} in”); print(f”{N - dentro} out”),0
+152,38,"N = int(input()); dentro, fora = 0, 0; for _ in range(N): X = int(input()); if 10 < X < 20: dentro += 1; else: fora += 1; print(f”{dentro} in”); print(f”{fora} out”)",0
+153,39,"N = int(input()); [print(f”{i}^2 = {i**2}”) for i in range(2, N+1, 2)]",1
+154,39,"N = int(input()); [print(f”{i}^2 = {i*i}”) for i in range(1, N+1) if i % 2 == 0]",0
+155,39,"N = int(input()); print(”\n”.join(f”{i}^2 = {i**2}” for i in range(2, N+1, 2)))",0
+156,39,"N = int(input()); [print(f”{i}^2 = {i**2}”) for i in range(1, N) if i % 2 == 0]",0
+157,40,N = int(input()); for _ in range(N): X = int(input()); if X == 0: print(“NULL”); elif X % 2 == 0: print(“EVEN POSITIVE” if X > 0 else “EVEN NEGATIVE”); else: print(“ODD POSITIVE” if X > 0 else “ODD NEGATIVE”),1
+158,40,N = int(input()); for _ in range(N): X = int(input()); if X % 2 == 0 and X == 0: print(“NULL”); elif X % 2 == 0: print(“EVEN POSITIVE” if X > 0 else “EVEN NEGATIVE”); else: print(“ODD POSITIVE” if X > 0 else “ODD NEGATIVE”),0
+159,40,N = int(input()); for _ in range(N): X = int(input()); if X % 2 != 0: print(“ODD POSITIVE” if X > 0 else “ODD NEGATIVE”); elif X % 2 == 0: print(“EVEN POSITIVE” if X > 0 else “EVEN NEGATIVE”); else: print(“NULL”),0
+160,40,N = int(input()); for _ in range(N): X = int(input()); if X % 2 == 0 and X != 0: print(“EVEN NULL”); else: print(“ODD POSITIVE” if X > 0 else “ODD NEGATIVE”),0
+161,41,"N = int(input()); [print(i) for i in range(1, 10001) if i % N == 2]",1
+162,41,"N = int(input()); for i in range(1, 10001): if i % N == 2: print(i)",0
+163,41,"N = int(input()); print(”\n”.join(str(i) for i in range(1, 10001) if i % N == 2))",0
+164,41,"N = int(input()); for i in range(1, 10001, N): if i % N == 2: print(i)",0
+165,42,"N = int(input()); [print(f”{i} x {N} = {i * N}”) for i in range(1, 11)]",1
+166,42,"N = int(input()); for i in range(1, 11): print(f”{i} x {N} = {i * N}”)",0
+167,42,"N = int(input()); print(”\n”.join(f”{i} x {N} = {i * N}” for i in range(1, 11)))",0
+168,42,N = int(input()); for i in range(10): print(f”{i + 1} x {N} = {(i + 1) * N}”),0
+169,43,"N = int(input()); for _ in range(N): a, b, c = map(float, input().split()); media = (a * 2 + b * 3 + c * 5) / 10; print(f”{media:.1f}”)",1
+170,43,"N = int(input()); for _ in range(N): a, b, c = map(float, input().split()); media = (a * 3 + b * 2 + c * 5) / 10; print(f”{media:.1f}”)",0
+171,43,"N = int(input()); for _ in range(N): a, b, c = map(float, input().split()); media = (a + b + c) / 3; print(f”{media:.1f}”)",0
+172,43,"N = int(input()); for _ in range(N): a, b, c = map(float, input().split()); media = (a * 5 + b * 3 + c * 2) / 10; print(f”{media:.1f}”)",0
+173,44,valores = [int(input()) for _ in range(100)]; maior = max(valores); posicao = valores.index(maior) + 1; print(maior); print(posicao),1
+174,44,valores = [int(input()) for _ in range(100)]; maior = max(valores); posicao = valores.index(maior); print(maior); print(posicao),0
+175,44,valores = [int(input()) for _ in range(100)]; maior = max(valores); posicao = valores.count(maior); print(maior); print(posicao),0
+176,44,valores = [int(input()) for _ in range(100)]; maior = min(valores); posicao = valores.index(maior) + 1; print(maior); print(posicao),0
+177,45,"N = int(input()); for _ in range(N): X, Y = map(int, input().split()); print(sum(i for i in range(min(X, Y) + 1, max(X, Y)) if i % 2 != 0))",1
+178,45,"N = int(input()); for _ in range(N): X, Y = map(int, input().split()); print(sum(i for i in range(min(X, Y), max(X, Y)) if i % 2 != 0))",0
+179,45,"N = int(input()); for _ in range(N): X, Y = map(int, input().split()); print(sum(i for i in range(X, Y) if i % 2 != 0))",0
+180,45,"N = int(input()); for _ in range(N): X, Y = map(int, input().split()); print(sum(i for i in range(min(X, Y), max(X, Y) + 1) if i % 2 != 0))",0
+181,46,"while True: M, N = map(int, input().split()); if M <= 0 or N <= 0: break; menor, maior = min(M, N), max(M, N); sequencia = range(menor, maior + 1); print(” “.join(map(str, sequencia)), f”Sum={sum(sequencia)}”)",1
+182,46,"while True: M, N = map(int, input().split()); if M <= 0 or N <= 0: break; menor, maior = min(M, N), max(M, N); print(” “.join(map(str, range(menor, maior + 1))), f”Sum={sum(range(menor, maior))}”)",0
+183,46,"while True: M, N = map(int, input().split()); if M <= 0 or N <= 0: break; print(” “.join(map(str, range(M, N + 1))), f”Sum={sum(range(M, N + 1))}”)",0
+184,46,"while True: M, N = map(int, input().split()); if M <= 0 or N <= 0: break; menor, maior = min(M, N), max(M, N); print(” “.join(map(str, range(menor, maior))), f”Sum={sum(range(menor, maior))}”)",0
+185,47,"while True: X, Y = map(int, input().split()); if X == Y: break; print(“Crescente” if X < Y else “Decrescente”)",1
+186,47,"while True: X, Y = map(int, input().split()); if X == Y: break; print(“Decrescente” if X < Y else “Crescente”)",0
+187,47,"while True: X, Y = map(int, input().split()); if X == Y: break; print(“Crescente” if X > Y else “Decrescente”)",0
+188,47,"while True: X, Y = map(int, input().split()); if X == Y: break; print(“Ordem inversa” if X < Y else “Ordem direta”)",0
+189,48,while True: senha = int(input()); if senha == 2002: print(“Acesso Permitido”); break; else: print(“Senha Invalida”),1
+190,48,while True: senha = int(input()); if senha == 2002: print(“Senha Invalida”); break; else: print(“Acesso Permitido”),0
+191,48,while True: senha = int(input()); if senha != 2002: print(“Acesso Permitido”); break; else: print(“Senha Invalida”),0
+192,48,while True: senha = int(input()); if senha == 2002: print(“Acesso Permitido”); else: print(“Senha Invalida”); break,0
+193,49,"while True: X, Y = map(int, input().split()); if X == 0 or Y == 0: break; print(“primeiro” if X > 0 and Y > 0 else “segundo” if X < 0 and Y > 0 else “terceiro” if X < 0 and Y < 0 else “quarto”)",1
+194,49,"while True: X, Y = map(int, input().split()); if X == 0 or Y == 0: break; print(“primeiro” if X > 0 and Y > 0 else “segundo” if X < 0 and Y < 0 else “terceiro” if X > 0 and Y < 0 else “quarto”)",0
+195,49,"while True: X, Y = map(int, input().split()); if X == 0 or Y == 0: print(“nulo”); break; print(“primeiro” if X > 0 and Y > 0 else “segundo” if X < 0 and Y > 0 else “terceiro” if X < 0 and Y < 0 else “quarto”)",0
+196,49,"while True: X, Y = map(int, input().split()); if X == 0 and Y == 0: break; print(“primeiro” if X > 0 and Y > 0 else “segundo” if X < 0 and Y > 0 else “terceiro” if X < 0 and Y < 0 else “quarto”)",0
+197,50,"T = int(input()); for _ in range(T): X, Y = map(int, input().split()); print(f”{X / Y:.1f}” if Y != 0 else “divisao impossivel”)",1
+198,50,"T = int(input()); for _ in range(T): X, Y = map(int, input().split()); print(f”{X / Y:.1f}” if X != 0 else “divisao impossivel”)",0
+199,50,"T = int(input()); for _ in range(T): X, Y = map(int, input().split()); print(“divisao impossivel” if Y != 0 else f”{X / Y:.1f}”)",0
+200,50,"T = int(input()); for _ in range(T): X, Y = map(int, input().split()); print(“divisao impossivel” if X == 0 or Y == 0 else f”{X / Y:.1f}”)",0
+201,51,while True: nota1 = float(input()); if 0 <= nota1 <= 10: break; print(“nota invalida”); while True: nota2 = float(input()); if 0 <= nota2 <= 10: break; print(“nota invalida”); media = (nota1 + nota2) / 2; print(f”media = {media:.2f}”),1
+202,51,nota1 = float(input()); while nota1 < 0 or nota1 > 10: print(“nota invalida”); nota1 = float(input()); nota2 = float(input()); while nota2 < 0 or nota2 > 10: print(“nota invalida”); nota2 = float(input()); media = (nota1 + nota2) / 2; print(f”media = {media:.2f}”),0
+203,51,"nota1, nota2 = map(float, input().split()); if 0 <= nota1 <= 10 and 0 <= nota2 <= 10: media = (nota1 + nota2) / 2; print(f”media = {media:.2f}”)",0
+204,51,"print(“Invalid input, valid range is 0-10”)",0
+205,52,"while True: nota1 = float(input()); if 0 <= nota1 <= 10: break; print(“nota invalida”); while True: nota2 = float(input()); if 0 <= nota2 <= 10: break; print(“nota invalida”); media = (nota1 + nota2) / 2; print(f”media = {media:.2f}”); opcao = 0; while opcao not in [1, 2]: opcao = int(input(“novo calculo (1-sim 2-nao)”)); if opcao == 2: break",1
+206,52,nota1 = float(input()); nota2 = float(input()); while nota1 < 0 or nota1 > 10 or nota2 < 0 or nota2 > 10: print(“nota invalida”); nota1 = float(input()); nota2 = float(input()); media = (nota1 + nota2) / 2; print(f”media = {media:.2f}”),0
+207,52,while True: media = sum(float(input()) for _ in range(2)) / 2; print(f”media = {media:.2f}”); opcao = int(input(“novo calculo (1-sim 2-nao)”)); if opcao == 2: break,0
+208,52,"nota1, nota2 = map(float, input().split()); while nota1 < 0 or nota1 > 10 or nota2 < 0 or nota2 > 10: print(“nota invalida”); media = (nota1 + nota2) / 2; print(f”media = {media:.2f}”)",0
+209,53,"X, Y = map(int, input().split()); print(sum(i for i in range(min(X, Y), max(X, Y) + 1) if i % 13 != 0))",1
+210,53,"X, Y = map(int, input().split()); print(sum(range(X, Y)))",0
+211,53,"X, Y = map(int, input().split()); print(sum(i for i in range(X, Y + 1) if i % 2 == 0))",0
+212,53,"X, Y = map(int, input().split()); print(sum(i for i in range(min(X, Y), max(X, Y) + 1) if i % 13 == 0))",0
+213,54,"X, Y = map(int, input().split()); for i in range(min(X, Y) + 1, max(X, Y)): if i % 5 in [2, 3]: print(i)",1
+214,54,"X, Y = map(int, input().split()); for i in range(min(X, Y), max(X, Y)): if i % 5 in [2, 3]: print(i)",0
+215,54,"X, Y = map(int, input().split()); for i in range(X + 1, Y): if i % 5 == 2: print(i)",0
+216,54,"X, Y = map(int, input().split()); for i in range(X, Y): print(i)",0
+217,55,"alcool, gasolina, diesel = 0, 0, 0; while True: codigo = int(input()); if codigo == 4: break; elif codigo == 1: alcool += 1; elif codigo == 2: gasolina += 1; elif codigo == 3: diesel += 1; print(f’Alcool: {alcool}, Gasolina: {gasolina}, Diesel: {diesel}’)",1
+218,55,while True: codigo = int(input()); if 1 <= codigo <= 4: break; print(f’Valid code: {codigo}’),0
+219,55,while True: codigo = int(input()); print(f’Code {codigo} is invalid’ if codigo < 1 or codigo > 4 else f’Code {codigo} is valid’),0
+220,55,codigo = int(input()); while codigo != 4: print(‘Invalid’); codigo = int(input()),0
+221,56,"N = int(input()); for i in range(1, N + 1): print(i)",1
+222,56,"N = int(input()); for i in range(1, N): print(i)",0
+223,56,"N = int(input()); print(”\n”.join(map(str, range(1, N + 1))))",0
+224,56,"N = int(input()); print(*range(1, N + 1))",0
+225,57,"N = int(input()); for i in range(1, N + 1): print(f”{i} {i ** 2} {i ** 3}”)",1
+226,57,"N = int(input()); for i in range(1, N): print(f”{i} {i ** 2} {i ** 3}”)",0
+227,57,"N = int(input()); print(”\n”.join(f”{i} {i ** 2} {i ** 3}” for i in range(1, N + 1)))",0
+228,57,"N = int(input()); for i in range(1, N + 1): print(f”{i} {i ** 2}”)",0
+229,58,"N = int(input()); for i in range(1, N + 1): print(f”{i} {i ** 2} {i ** 3}\n{i} {i ** 2 + 1} {i ** 3 + 1}”)",1
+230,58,"N = int(input()); for i in range(1, N): print(f”{i} {i ** 2} {i ** 3}\n{i} {i ** 2 + 1} {i ** 3 + 1}”)",0
+231,58,"N = int(input()); print(”\n”.join(f”{i} {i ** 2} {i ** 3}\n{i} {i ** 2 + 1} {i ** 3 + 1}” for i in range(1, N + 1)))",0
+232,58,"N = int(input()); for i in range(1, N + 1): print(f”{i} {i ** 2} {i ** 3}”)",0
+233,59,"X, Y = map(int, input().split()); for i in range(1, Y + 1, X): print(” “.join(map(str, range(i, min(i + X, Y + 1))))",1
+234,59,"X, Y = map(int, input().split()); for i in range(1, Y, X): print(” “.join(map(str, range(i, min(i + X, Y))))",0
+235,59,"X, Y = map(int, input().split()); print(”\n”.join(” “.join(map(str, range(i, i + X))) for i in range(1, Y + 1, X)))",0
+236,59,"X, Y = map(int, input().split()); for i in range(1, Y + 1, X): print(*range(i, min(i + X, Y + 1)))",0
+237,60,"while True: X = int(input()); if X == 0: break; print(” “.join(map(str, range(1, X + 1))))",1
+238,60,"while True: X = int(input()); if X == 0: break; print(” “.join(map(str, range(1, X))))",0
+239,60,"while True: X = int(input()); if X == 0: break; print(” “.join(map(str, range(1, X + 2))))",0
+240,60,"while True: X = int(input()); if X == 0: break; print(” “.join(map(str, range(2, X + 1))))",0
+241,61,A = int(input()); N = int(input()); while N <= 0: N = int(input()); print(sum(A + i for i in range(N))),1
+242,61,"A = int(input()); N = int(input()); while N <= 0: N = int(input()); print(sum(range(A, A + N)))",0
+243,61,A = int(input()); N = int(input()); while N <= 0: N = int(input()); print(sum(A + i for i in range(N + 1))),0
+244,61,A = int(input()); N = int(input()); while N <= 0: N = int(input()); print(sum(A + i for i in range(N - 1))),0
+245,62,"N = int(input()); a, b = 0, 1; for _ in range(N): print(a, end=” “); a, b = b, a + b",1
+246,62,"N = int(input()); a, b = 0, 1; for _ in range(N): print(a, b, end=” “); a, b = b, a + b",0
+247,62,N = int(input()); print(” “.join(str(a) for a in range(N))),0
+248,62,"N = int(input()); a, b = 0, 1; for i in range(N): print(a, end=” “); a = b - a",0
+249,63,"N = int(input()); fatorial = 1; for i in range(1, N + 1): fatorial *= i; print(fatorial)",1
+250,63,"N = int(input()); fatorial = N; for i in range(1, N): fatorial *= i; print(fatorial)",0
+251,63,"N = int(input()); print(sum(range(1, N + 1)))",0
+252,63,"N = int(input()); print(” “.join(str(i) for i in range(1, N + 1)))",0
+253,64,"total, count = 0, 0; while True: idade = int(input()); if idade < 0: break; total += idade; count += 1; print(f”{total / count:.2f}”)",1
+254,64,"total, count = 0, 0; while True: idade = int(input()); if idade < 0: break; total += idade; count += 1; print(f”{total / (count + 1):.2f}”)",0
+255,64,"total, count = 0, 0; idade = int(input()); while idade >= 0: total += idade; count += 1; print(f”{total / count:.2f}”)",0
+256,64,"total, count = 0, 0; while True: idade = int(input()); if idade > 0: total += idade; count += 1; print(f”{total / count:.2f}”)",0
+257,65,"S = sum(1 / i for i in range(1, 101)); print(f”{S:.2f}”)",1
+258,65,"S = sum(1 / i for i in range(2, 101)); print(f”{S:.2f}”)",0
+259,65,"S = 0; for i in range(1, 101): S += i; print(f”{S:.2f}”)",0
+260,65,"S = sum(i for i in range(1, 101)); print(f”{S:.2f}”)",0
+261,66,"S = 0; numerator, denominator = 1, 1; while numerator <= 39: S += numerator / denominator; numerator += 2; denominator *= 2; print(f”{S:.2f}”)",1
+262,66,"S = 0; for numerator, denominator in zip(range(1, 40, 2), range(1, 101, 2)): S += numerator / denominator; print(f”{S:.2f}”)",0
+263,66,"S = 0; for numerator in range(1, 40, 2): S += numerator / (numerator + 1); print(f”{S:.2f}”)",0
+264,66,"S = sum(numerator / (2 ** (numerator // 2)) for numerator in range(1, 40, 2)); print(f”{S:.2f}”)",0
+265,67,"N = int(input()); print(”\n”.join(str(i) for i in range(1, N + 1) if N % i == 0))",1
+266,67,"N = int(input()); for i in range(1, N): print(i if N % i == 0 else “”)",0
+267,67,"N = int(input()); print(”\n”.join(str(i) for i in range(1, N + 1) if N % 2 == 0))",0
+268,67,"N = int(input()); divisores = [i for i in range(1, N) if N % i == 0]; print(”\n”.join(map(str, divisores)))",0
+269,68,"N = int(input()); for _ in range(N): X, Y = map(int, input().split()); print(sum(X + 2 * i for i in range(Y) if (X + i * 2) % 2 != 0))",1
+270,68,"N = int(input()); for _ in range(N): X, Y = map(int, input().split()); print(sum(range(X, X + 2 * Y, 2)))",0
+271,68,"N = int(input()); for _ in range(N): X, Y = map(int, input().split()); print(sum(X + i for i in range(1, Y * 2, 2)))",0
+272,68,"N = int(input()); for _ in range(N): X, Y = map(int, input().split()); print(sum(i for i in range(X, X + 2 * Y) if i % 2 == 0))",0
+273,69,while True: X = int(input()); if X == 0: break; if X % 2 != 0: X += 1; print(sum(X + 2 * i for i in range(5))),1
+274,69,"while True: X = int(input()); if X == 0: break; if X % 2 != 0: X += 1; print(sum(range(X, X + 10, 2)))",0
+275,69,"while True: X = int(input()); if X == 0: break; print(sum(i for i in range(X, X + 10, 2)))",0
+276,69,"while True: X = int(input()); if X == 0: break; print(sum(i for i in range(X, X + 10) if i % 2 == 0))",0
+277,70,"N = int(input()); print(“Perfect” if sum(i for i in range(1, N) if N % i == 0) == N else “Not Perfect”)",1
+278,70,"N = int(input()); print(“Perfect” if sum(i for i in range(1, N // 2) if N % i == 0) == N else “Not Perfect”)",0
+279,70,"N = int(input()); print(“Perfect” if sum(i for i in range(1, N) if N % i != 0) == N else “Not Perfect”)",0
+280,70,"N = int(input()); print(“Perfect” if sum(i for i in range(1, N // 2 + 1) if N % i == 0) == N else “Not Perfect”)",0
+281,71,"N = int(input()); print(“Prime” if N > 1 and all(N % i != 0 for i in range(2, int(N ** 0.5) + 1)) else “Not Prime”)",1
+282,71,"N = int(input()); print(“Prime” if all(N % i != 0 for i in range(2, N)) else “Not Prime”)",0
+283,71,"N = int(input()); print(“Prime” if sum(1 for i in range(1, N + 1) if N % i == 0) == 2 else “Not Prime”)",0
+284,71,"N = int(input()); print(“Prime” if N > 0 and all(N % i != 0 for i in range(2, N // 2 + 1)) else “Not Prime”)",0
+285,72,"X = [max(1, int(input())) for _ in range(10)]; print(”\n”.join(f”X[{i}] = {X[i]}” for i in range(10)))",1
+286,72,"X = [int(input()) for _ in range(10)]; print(”\n”.join(f”X[{i}] = {max(1, X[i])}” for i in range(10)))",0
+287,72,X = [int(input()) for _ in range(10)]; X = [x if x > 0 else 1 for x in X]; print(”\n”.join(f”X[{i}] = {X[i]}” for i in range(10))),0
+288,72,"X = [int(input()) for _ in range(10)]; for i in range(10): print(f”X[{i}] = {max(0, X[i])}”)",0
+289,73,N = [int(input())]; [N.append(N[-1] * 2) for _ in range(9)]; print(”\n”.join(f”N[{i}] = {N[i]}” for i in range(10))),1
+290,73,"N = [int(input())] + [0] * 9; for i in range(1, 10): N[i] = N[i - 1] * 2; print(”\n”.join(f”N[{i}] = {N[i]}” for i in range(10)))",0
+291,73,"N = [int(input()) for _ in range(10)]; for i in range(1, 10): N[i] = N[i - 1] * 2; print(”\n”.join(f”N[{i}] = {N[i]}” for i in range(10)))",0
+292,73,"N = [int(input())]; for i in range(1, 10): N.append(N[i - 1] * 3); print(”\n”.join(f”N[{i}] = {N[i]}” for i in range(10)))",0
+293,74,A = [float(input()) for _ in range(100)]; print(”\n”.join(f”A[{i}] = {A[i]:.1f}” for i in range(100) if A[i] <= 10)),1
+294,74,A = [float(input()) for _ in range(100)]; print(”\n”.join(f”A[{i}] = {A[i]:.2f}” for i in range(100) if A[i] < 10)),0
+295,74,A = [float(input()) for _ in range(100)]; print(”\n”.join(f”A[{i}] = {A[i]}” for i in range(100) if A[i] > 10)),0
+296,74,A = [float(input()) for _ in range(100)]; print(”\n”.join(f”A[{i}] = {A[i]:.1f}” for i in range(100) if A[i] >= 10)),0
+297,75,"N = [int(input()) for _ in range(20)]; for i in range(10): N[i], N[19 - i] = N[19 - i], N[i]; print(”\n”.join(f”N[{i}] = {N[i]}” for i in range(20)))",1
+298,75,"N = [int(input()) for _ in range(20)]; for i in range(20): N[i], N[-i - 1] = N[-i - 1], N[i]; print(”\n”.join(f”N[{i}] = {N[i]}” for i in range(20)))",0
+299,75,"N = [int(input()) for _ in range(20)]; for i in range(10): N[i], N[i + 10] = N[i + 10], N[i]; print(”\n”.join(f”N[{i}] = {N[i]}” for i in range(20)))",0
+300,75,N = [int(input()) for _ in range(20)]; print(”\n”.join(f”N[{i}] = {N[-i - 1]}” for i in range(20))),0
+301,76,"N = int(input()); a, b = 0, 1; for _ in range(N): a, b = b, a + b; print(a)",1
+302,76,"N = int(input()); fib = [0, 1]; for i in range(2, N + 1): fib.append(fib[i - 1] + fib[i - 2]); print(fib[N])",0
+303,76,"N = int(input()); fib = [0, 1]; while len(fib) <= N: fib.append(fib[-1] + fib[-2]); print(fib[N])",0
+304,76,"N = int(input()); a, b = 0, 1; for _ in range(N - 1): a, b = b, a + b; print(b)",0
+305,77,T = int(input()); N = [i % T for i in range(1000)]; print(”\n”.join(f”N[{i}] = {N[i]}” for i in range(1000))),1
+306,77,T = int(input()); N = [(i % T) for i in range(1000)]; for i in range(1000): print(f”N[{i}] = {N[i]}”),0
+307,77,T = int(input()); N = [i for i in range(1000)]; print(”\n”.join(f”N[{i}] = {N[i]}” for i in range(1000))),0
+308,77,T = int(input()); N = [i % (T + 1) for i in range(1000)]; print(”\n”.join(f”N[{i}] = {N[i]}” for i in range(1000))),0
+309,78,X = float(input()); N = [X]; [N.append(N[-1] / 2) for _ in range(99)]; print(”\n”.join(f”N[{i}] = {N[i]:.4f}” for i in range(100))),1
+310,78,"X = float(input()); N = [X] + [0] * 99; for i in range(1, 100): N[i] = N[i - 1] / 2; print(”\n”.join(f”N[{i}] = {N[i]:.4f}” for i in range(100)))",0
+311,78,X = float(input()); N = [X / (2 ** i) for i in range(100)]; print(”\n”.join(f”N[{i}] = {N[i]:.4f}” for i in range(100))),0
+312,78,"X = float(input()); N = [X] + [0] * 99; for i in range(1, 100): N[i] = N[i - 1] / 2; print(”\n”.join(f”N[{i}] = {N[i]:.2f}” for i in range(100)))",0
+313,79,"impares, pares = [], []; for _ in range(15): valor = int(input()); if valor % 2 == 0: pares.append(valor); if len(pares) == 5: print(”\n”.join(f”par[{i}] = {pares[i]}” for i in range(5))); pares = []; else: impares.append(valor); if len(impares) == 5: print(”\n”.join(f”impar[{i}] = {impares[i]}” for i in range(5))); impares = []; for i, v in enumerate(impares): print(f”impar[{i}] = {v}”); for i, v in enumerate(pares): print(f”par[{i}] = {v}”)",1
+314,79,"impares, pares = [], []; for _ in range(15): valor = int(input()); if valor % 2 == 0: pares.append(valor); if len(pares) == 5: print(”\n”.join(f”par[{i}] = {pares[i]}” for i in range(5))); else: impares.append(valor); if len(impares) == 5: print(”\n”.join(f”impar[{i}] = {impares[i]}” for i in range(5))); for i, v in enumerate(impares): print(f”impar[{i}] = {v}”); for i, v in enumerate(pares): print(f”par[{i}] = {v}”)",0
+315,79,"impares, pares = [], []; for _ in range(15): valor = int(input()); if valor % 2 == 0: pares.append(valor); else: impares.append(valor); if len(impares) == 5 or len(pares) == 5: print(”\n”.join(f”impar[{i}] = {impares[i]}” for i in range(5))); for i, v in enumerate(pares): print(f”par[{i}] = {v}”)",0
+316,79,"impares, pares = [], []; for _ in range(15): valor = int(input()); pares.append(valor); if len(pares) == 5: print(”\n”.join(f”par[{i}] = {pares[i]}” for i in range(5))); pares = []; for i, v in enumerate(impares): print(f”impar[{i}] = {v}”); for i, v in enumerate(pares): print(f”par[{i}] = {v}”)",0
+317,80,N = int(input()); X = [int(input()) for _ in range(N)]; menor = min(X); posicao = X.index(menor); print(f”Menor valor: {menor}\nPosicao: {posicao}”),1
+318,80,N = int(input()); X = [int(input()) for _ in range(N)]; menor = max(X); posicao = X.index(menor); print(f”Menor valor: {menor}\nPosicao: {posicao}”),0
+319,80,N = int(input()); X = [int(input()) for _ in range(N)]; menor = min(X); posicao = X.count(menor); print(f”Menor valor: {menor}\nPosicao: {posicao}”),0
+320,80,N = int(input()); X = [int(input()) for _ in range(N)]; menor = X[-1]; posicao = len(X) - 1; print(f”Menor valor: {menor}\nPosicao: {posicao}”),0
+321,81,"N = int(input()); M = [[abs(i - j) + 1 for j in range(N)] for i in range(N)]; for row in M: print(” “.join(map(str, row)))",1
+322,81,"N = int(input()); M = [[i + j for j in range(N)] for i in range(N)]; for row in M: print(” “.join(map(str, row)))",0
+323,81,"N = int(input()); M = [[max(i, j) for j in range(N)] for i in range(N)]; for row in M: print(” “.join(map(str, row)))",0
+324,81,"N = int(input()); M = [[min(i, j) + 1 for j in range(N)] for i in range(N)]; for row in M: print(” “.join(map(str, row)))",0
+325,82,"N = int(input()); M = [[i + j + 1 for j in range(N)] for i in range(N)]; for row in M: print(” “.join(map(str, row)))",1
+326,82,"N = int(input()); M = [[i * j + 1 for j in range(N)] for i in range(N)]; for row in M: print(” “.join(map(str, row)))",0
+327,82,"N = int(input()); M = [[i + j for j in range(N)] for i in range(N)]; for row in M: print(” “.join(map(str, row)))",0
+328,82,"N = int(input()); M = [[abs(i - j) + 1 for j in range(N)] for i in range(N)]; for row in M: print(” “.join(map(str, row)))",0
+329,83,"N = int(input()); M = [[min(i, j, N - i - 1, N - j - 1) + 1 for j in range(N)] for i in range(N)]; for row in M: print(” “.join(map(str, row)))",1
+330,83,"N = int(input()); M = [[max(i, j) + 1 for j in range(N)] for i in range(N)]; for row in M: print(” “.join(map(str, row)))",0
+331,83,"N = int(input()); M = [[i + j + 1 for j in range(N)] for i in range(N)]; for row in M: print(” “.join(map(str, row)))",0
+332,83,"N = int(input()); M = [[N - max(i, j) for j in range(N)] for i in range(N)]; for row in M: print(” “.join(map(str, row)))",0
+333,84,"N = int(input()); M = [[(i + 1) * (j + 1) for j in range(N)] for i in range(N)]; for row in M: print(” “.join(map(str, row)))",1
+334,84,"N = int(input()); M = [[i * j for j in range(N)] for i in range(N)]; for row in M: print(” “.join(map(str, row)))",0
+335,84,"N = int(input()); M = [[i + j for j in range(N)] for i in range(N)]; for row in M: print(” “.join(map(str, row)))",0
+336,84,"N = int(input()); M = [[i + 1 for _ in range(N)] for i in range(N)]; for row in M: print(” “.join(map(str, row)))",0
+337,85,print(“Vai ter copa!”),1
+338,85,print(“Não vai ter copa!”),0
+339,85,if False: print(“Vai ter copa!”) else: print(“Não vai ter copa!”),0
+340,85,"print(“Vai ter copa sim, e se reclamar vai ter duas!”)",0
+341,86,N = int(input()); print(” “.join([“Ho”] * N) + “!”),1
+342,86,N = int(input()); print(“Ho “ * N),0
+343,86,N = int(input()); print(” “.join([“Ho!”] * N)),0
+344,86,N = int(input()); print(“Ho “ * (N - 1) + “Ho!”),0
+345,87,"N = int(input()); M = [[0] * N for _ in range(N)]; for i in range(N): M[i][i] = 2; M[i][N - i - 1] = 3; for i in range(1, N // 2): for j in range(i, N - i): M[i][j] = M[N - i - 1][j] = M[j][i] = M[j][N - i - 1] = 1; if N % 2 != 0: M[N // 2][N // 2] = 4; for row in M: print(” “.join(map(str, row)))",1
+346,87,"N = int(input()); M = [[(i + j) % 5 for j in range(N)] for i in range(N)]; for row in M: print(” “.join(map(str, row)))",0
+347,87,"N = int(input()); M = [[(i * j) % 5 for j in range(N)] for i in range(N)]; for row in M: print(” “.join(map(str, row)))",0
+348,87,"N = int(input()); M = [[1 if i == j else 0 for j in range(N)] for i in range(N)]; for row in M: print(” “.join(map(str, row)))",0
+349,88,"name, force = input().split(); print(“Sim” if name == “Thor” else “Não”)",1
+350,88,"name, force = input().split(); print(“Sim” if int(force) > 1000 else “Não”)",0
+351,88,"name, force = input().split(); print(“Não” if name == “Thor” else “Sim”)",0
+352,88,"name, force = input().split(); print(“Sim” if int(force) > 5000 else “Não”)",0
+353,89,N = int(input()); print(1 if N % 2 != 0 else 0),1
+354,89,N = int(input()); print(N // 2),0
+355,89,N = int(input()); print(-1 if N % 2 == 0 else 1),0
+356,89,"N = int(input()); print((1 if i % 2 != 0 else -1) for i in range(1, N + 1))",0
+357,90,"varetas = sorted(map(int, input().split())); print(“S” if varetas[0] + varetas[1] > varetas[2] or varetas[1] + varetas[2] > varetas[3] else “N”)",1
+358,90,"varetas = sorted(map(int, input().split())); print(“S” if varetas[0] + varetas[1] > varetas[3] else “N”)",0
+359,90,"varetas = sorted(map(int, input().split())); print(“S” if sum(varetas[:3]) > varetas[3] else “N”)",0
+360,90,"varetas = sorted(map(int, input().split())); print(“S” if all(varetas[i] + varetas[i+1] > varetas[i+2] for i in range(2)) else “N”)",0
+361,91,N = int(input()); print(hex(N)[2:].upper()),1
+362,91,"N = int(input()); print(format(N, “X”))",0
+363,91,N = int(input()); print(f”{N:X}”),0
+364,91,N = int(input()); print(bin(N)[2:].upper()),0
+365,92,N = float(input()); print(f”{N:+.4E}”),1
+366,92,N = float(input()); print(f”{N:.4E}”),0
+367,92,"N = float(input()); print(format(N, “+.4E”))",0
+368,92,N = float(input()); print(f”{N:+.2f}”),0
+369,93,"def int_to_roman(num): numerals = [(“M”, 1000), (“CM”, 900), (“D”, 500), (“CD”, 400), (“C”, 100), (“XC”, 90), (“L”, 50), (“XL”, 40), (“X”, 10), (“IX”, 9), (“V”, 5), (“IV”, 4), (“I”, 1)]; result = “”; for roman, value in numerals: while num >= value: result += roman; num -= value; return result; print(int_to_roman(int(input())))",1
+370,93,"def int_to_roman(num): numerals = [(“M”, 1000), (“CM”, 900), (“D”, 500), (“C”, 100), (“XC”, 90), (“L”, 50), (“X”, 10), (“V”, 5), (“I”, 1)]; result = “”; for roman, value in numerals: while num >= value: result += roman; num -= value; return result; print(int_to_roman(int(input())))",0
+371,93,print(“Invalid number for Roman numerals”),0
+372,93,"def int_to_roman(num): numerals = [(“M”, 1000), (“D”, 500), (“C”, 100), (“L”, 50), (“X”, 10), (“V”, 5), (“I”, 1)]; result = “”; for roman, value in numerals: while num >= value: result += roman; num -= value; return result; print(int_to_roman(int(input())))",0
+373,94,T = int(input()); for _ in range(T): anos = int(input()); print(f”{2023 - anos} A.C.” if anos >= 2023 else f”{2023 - anos} D.C.”),1
+374,94,T = int(input()); for _ in range(T): anos = int(input()); print(f”{2023 + anos} D.C.” if anos < 2023 else f”{2023 - anos} A.C.”),0
+375,94,T = int(input()); for _ in range(T): anos = int(input()); print(f”{2023 + anos} A.C.”),0
+376,94,T = int(input()); for _ in range(T): anos = int(input()); print(f”{anos - 2023} A.C.”),0
+377,95,"N = int(input()); best_student, best_grade = 0, 0; for _ in range(N): matricula, nota = input().split(); nota = float(nota); if nota > best_grade: best_grade = nota; best_student = matricula; print(best_student if best_grade >= 8 else “Minimum note not reached”)",1
+378,95,"N = int(input()); best_student, best_grade = 0, 0; for _ in range(N): matricula, nota = input().split(); nota = float(nota); if nota > best_grade: best_grade = nota; print(best_student if best_grade > 8 else “Minimum note not reached”)",0
+379,95,"N = int(input()); best_student, best_grade = 0, 0; for _ in range(N): matricula, nota = input().split(); print(“Minimum note not reached”)",0
+380,95,"N = int(input()); best_student, best_grade = 0, 0; for _ in range(N): matricula, nota = input().split(); print(matricula if float(nota) >= 8 else “Minimum note not reached”)",0
+381,96,print(input()[::-1]),1
+382,96,print(””.join(reversed(input()))),0
+383,96,n = input(); print(””.join(n[::-1])),0
+384,96,n = input(); print(””.join(sorted(n))),0
+385,97,"H, M = map(int, input().split()); atraso = max(0, (H - 7) * 60 + M); print(f”Atraso maximo: {atraso}”)",1
+386,97,"H, M = map(int, input().split()); atraso = max(0, (H - 8) * 60 + M); print(f”Atraso maximo: {atraso}”)	0",0
+387,97,"H, M = map(int, input().split()); atraso = max(0, (H - 6) * 60 + M); print(f”Atraso maximo: {atraso}”)",0
+388,97,"H, M = map(int, input().split()); atraso = max(0, (H - 7) * 30 + M); print(f”Atraso maximo: {atraso}”)",0
+389,98,"S, T, F = map(int, input().split()); hora_chegada = (S + T + F) % 24; print(hora_chegada)",1
+390,98,"S, T, F = map(int, input().split()); hora_chegada = (S + T + F) % 23; print(hora_chegada)",0
+391,98,"S, T, F = map(int, input().split()); hora_chegada = (S + T - F) % 24; print(hora_chegada)",0
+392,98,"S, T, F = map(int, input().split()); hora_chegada = (S + T) % 24; print(hora_chegada)",0
+393,99,"N = int(input()); nums = list(map(int, input().split())); print(f”Multiples of 2: {sum(1 for x in nums if x % 2 == 0)}\nMultiples of 3: {sum(1 for x in nums if x % 3 == 0)}\nMultiples of 4: {sum(1 for x in nums if x % 4 == 0)}\nMultiples of 5: {sum(1 for x in nums if x % 5 == 0)}”)",1
+394,99,"N = int(input()); nums = list(map(int, input().split())); print(f”Multiples of 2: {len(nums) // 2}\nMultiples of 3: {len(nums) // 3}\nMultiples of 4: {len(nums) // 4}\nMultiples of 5: {len(nums) // 5}”)",0
+395,99,"N = int(input()); nums = list(map(int, input().split())); print(f”Multiples of 2: {sum(x % 2 == 0 for x in nums)}\nMultiples of 3: {sum(x % 3 == 0 for x in nums)}\nMultiples of 4: {sum(x % 4 == 0 for x in nums)}\nMultiples of 5: {sum(x % 5 == 0 for x in nums)}”)",0
+396,99,"N = int(input()); nums = list(map(int, input().split())); print(f”Multiples of 2: {max(nums) // 2}\nMultiples of 3: {max(nums) // 3}\nMultiples of 4: {max(nums) // 4}\nMultiples of 5: {max(nums) // 5}”)",0
+397,100,"N1, N2 = input().split(); print(“Yes” if N1 in N2 else “No”)",1
+398,100,"N1, N2 = input().split(); print(“No” if N1 in N2 else “Yes”)",0
+399,100,"N1, N2 = input().split(); print(“Yes” if N2 in N1 else “No”)",0
+400,100,"N1, N2 = input().split(); print(“Yes” if any(d in N2 for d in N1) else “No”",0
+401,101,"notas = [2, 5, 10, 20, 50, 100]; troco = int(input()); print(“Possible” if any(troco - n in notas for n in notas) else “Impossible”)",1
+402,101,"notas = [2, 5, 10, 20, 50, 100]; troco = int(input()); print(“Possible” if troco % 2 == 0 else “Impossible”)",0
+403,101,"notas = [2, 5, 10, 20, 50, 100]; troco = int(input()); print(“Possible” if troco > 100 else “Impossible”)",0
+404,101,"notas = [2, 5, 10, 20, 50, 100]; troco = int(input()); print(“Possible” if troco - 2 in notas else “Impossible”)",0
+405,102,print(int(input()) - 1),1
+406,102,print(int(input()) + 1),0
+407,102,print(int(input()) * 2),0
+408,102,print(int(input()) // 2),0
+409,103,print(“Cabe no formulário” if len(input()) <= 80 else “Não cabe no formulário”),1
+410,103,print(“Cabe no formulário” if len(input()) < 80 else “Não cabe no formulário”),0
+411,103,print(“Cabe no formulário” if len(input()) == 80 else “Não cabe no formulário”),0
+412,103,print(“Cabe no formulário” if len(input()) > 80 else “Não cabe no formulário”),0
+413,104,"N = int(input()); landscape = list(map(int, input().split())); print(“Valid” if all((landscape[i] > landscape[i-1]) != (landscape[i] > landscape[i+1]) for i in range(1, N-1)) else “Invalid”)",1
+414,104,"N = int(input()); landscape = list(map(int, input().split())); print(“Valid” if all(landscape[i] > landscape[i-1] for i in range(1, N)) else “Invalid”)",0
+415,104,"N = int(input()); landscape = list(map(int, input().split())); print(“Valid” if any((landscape[i] > landscape[i-1]) != (landscape[i] > landscape[i+1]) for i in range(1, N-1)) else “Invalid”)",0
+416,104,"N = int(input()); landscape = list(map(int, input().split())); print(“Valid” if all(landscape[i] < landscape[i-1] for i in range(1, N)) else “Invalid”)",0
+417,105,print(“TWEET” if len(input()) <= 140 else “MUTE”),1
+418,105,print(“TWEET” if len(input()) < 140 else “MUTE”),0
+419,105,print(“TWEET” if len(input()) == 140 else “MUTE”),0
+420,105,print(“TWEET” if len(input()) > 140 else “MUTE”),0
+421,106,"N = int(input()); speeds = list(map(int, input().split())); print(next((i + 1 for i in range(N - 1) if speeds[i] > speeds[i + 1]), 0))",1
+422,106,"N = int(input()); speeds = list(map(int, input().split())); print(next((i for i in range(N - 1) if speeds[i] < speeds[i + 1]), 0))",0
+423,106,"N = int(input()); speeds = list(map(int, input().split())); print(next((i + 1 for i in range(N - 1) if speeds[i] == speeds[i + 1]), 0))",0
+424,106,"N = int(input()); speeds = list(map(int, input().split())); print(next((i for i in range(N - 1) if speeds[i] > speeds[i + 1]), -1))",0
+425,107,"n = int(input()); matrix = [list(map(int, input().split())) for _ in range(n)]; for i in range(n - 1): print(” “.join(“S” if sum([matrix[i][j], matrix[i+1][j], matrix[i][j+1], matrix[i+1][j+1]]) >= 2 else “U” for j in range(n - 1)))",1
+426,107,"n = int(input()); matrix = [list(map(int, input().split())) for _ in range(n)]; for i in range(n - 1): print(” “.join(“U” if sum([matrix[i][j], matrix[i+1][j], matrix[i][j+1], matrix[i+1][j+1]]) >= 2 else “S” for j in range(n - 1)))",0
+427,107,"n = int(input()); matrix = [list(map(int, input().split())) for _ in range(n)]; for i in range(n - 1): print(” “.join(“S” if sum([matrix[i][j], matrix[i][j+1]]) >= 2 else “U” for j in range(n - 1)))",0
+428,107,"n = int(input()); matrix = [list(map(int, input().split())) for _ in range(n)]; for i in range(n - 1): print(” “.join(“S” if sum([matrix[i][j], matrix[i+1][j]]) >= 2 else “U” for j in range(n - 1)))",0
+429,108,"xp, multiplier = map(int, input().split()); print(xp * multiplier)",1
+430,108,"xp, multiplier = map(int, input().split()); print(xp + multiplier)",0
+431,108,"xp, multiplier = map(int, input().split()); print(xp ** multiplier)",0
+432,108,"xp, multiplier = map(int, input().split()); print(xp / multiplier)",0
+433,109,"hotdogs, participants = map(int, input().split()); print(f”{hotdogs / participants:.2f}”)",1
+434,109,"hotdogs, participants = map(int, input().split()); print(f”{hotdogs // participants}”)",0
+435,109,"hotdogs, participants = map(int, input().split()); print(f”{participants / hotdogs:.2f}”)",0
+436,109,"hotdogs, participants = map(int, input().split()); print(f”{hotdogs * participants:.2f}”)",0
+437,110,"a, b, c = map(int, input().split()); print(“S” if 0 in {a, b, c, a+b, a+c, b+c, a+b+c, a-b, a-c, b-a, b-c, c-a, c-b} else “N”)",1
+438,110,"a, b, c = map(int, input().split()); print(“S” if 0 in {a+b, a+c, b+c} else “N”)",0
+439,110,"a, b, c = map(int, input().split()); print(“S” if abs(a+b+c) == 0 else “N”)",0
+440,110,"a, b, c = map(int, input().split()); print(“S” if a == b == c else “N”)",0
+441,111,"n = int(input()); total_saques = total_bloqueios = total_ataques = success_saques = success_bloqueios = success_ataques = 0; for _ in range(n): input(); t_saque, t_bloqueio, t_ataque = map(int, input().split()); s_saque, s_bloqueio, s_ataque = map(int, input().split()); total_saques += t_saque; total_bloqueios += t_bloqueio; total_ataques += t_ataque; success_saques += s_saque; success_bloqueios += s_bloqueio; success_ataques += s_ataque; print(f”Pontos de Saque: {success_saques / total_saques * 100:.2f} %\nPontos de Bloqueio: {success_bloqueios / total_bloqueios * 100:.2f} %\nPontos de Ataque: {success_ataques / total_ataques * 100:.2f} %”)",1
+442,111,"n = int(input()); total_saques = total_bloqueios = total_ataques = 0; success_saques = success_bloqueios = success_ataques = 0; for _ in range(n): input(); t_saque, t_bloqueio, t_ataque = map(int, input().split()); total_saques += t_saque; total_bloqueios += t_bloqueio; total_ataques += t_ataque; print(f”Pontos de Saque: {success_saques / total_saques * 100:.2f} %\nPontos de Bloqueio: {success_bloqueios / total_bloqueios * 100:.2f} %\nPontos de Ataque: {success_ataques / total_ataques * 100:.2f} %”)",0
+443,111,"n = int(input()); total_saques = success_saques = total_bloqueios = total_ataques = 0; for _ in range(n): input(); t_saque, t_bloqueio, t_ataque = map(int, input().split()); total_saques += t_saque; print(f”Pontos de Saque: {success_saques / total_saques * 100:.2f} %”)",0
+444,111,"n = int(input()); total_saques = success_saques = total_bloqueios = success_bloqueios = total_ataques = success_ataques = 0; for _ in range(n): t_saque, t_bloqueio, t_ataque = map(int, input().split()); total_saques += t_saque; success_saques += t_saque; print(f”Pontos de Saque: {success_saques / total_saques * 100:.2f} %\nPontos de Bloqueio: {success_bloqueios / total_bloqueios * 100:.2f} %\nPontos de Ataque: {success_ataques / total_ataques * 100:.2f} %”)",0
+445,112,"grau = float(input()); notas = list(map(float, input().split())); notas.remove(max(notas)); notas.remove(min(notas)); print(f”{sum(notas) * grau:.1f}”)",1
+446,112,"grau = float(input()); notas = list(map(float, input().split())); notas.remove(max(notas)); print(f”{sum(notas) * grau:.1f}”)",0
+447,112,"grau = float(input()); notas = list(map(float, input().split())); print(f”{sum(notas[1:-1]) * grau:.1f}”)",0
+448,112,"grau = float(input()); notas = list(map(float, input().split())); print(f”{(sum(notas) - max(notas) - min(notas)) * grau:.2f}”)",0
+449,113,"a, b, c = sorted(map(int, input().split())); if a + b > c: print(“Triângulo Escaleno” if a != b != c else “Triângulo Isósceles” if a == b or b == c else “Triângulo Equilátero”); if a2 + b2 == c**2: print(“Triângulo Retângulo”)",1
+450,113,"a, b, c = sorted(map(int, input().split())); if a + b > c: print(“Triângulo Equilátero” if a == b == c else “Triângulo Isósceles”); if a2 + b2 == c**2: print(“Triângulo Retângulo”)",0
+451,113,"a, b, c = sorted(map(int, input().split())); if a + b > c: print(“Triângulo Retângulo” if a2 + b2 == c**2 else “Triângulo Escaleno”)",0
+452,113,"a, b, c = map(int, input().split()); if a + b > c and a + c > b and b + c > a: print(“Triângulo Isósceles”)",0
+453,114,i = int(input()); print(f”Feliz nat{‘a’ * i}l!!”),1
+454,114,i = int(input()); print(f”Feliz nat{‘a’ * (i + 1)}l!!”),0
+455,114,i = int(input()); print(f”Feliz nat{‘a’ * (i - 1)}l!!”),0
+456,114,i = int(input()); print(f”Feliz natal{’!’ * i}”),0
+457,115,"n = int(input()); erros = []; for i in range(n): a, op, b, eq, res, jogada = input().split(); a, b, res = int(a), int(b), int(res); valid = (a + b == res) or (a - b == res) or (a * b == res); if jogada == “+” and a + b != res: erros.append(i+1); elif jogada == “-” and a - b != res: erros.append(i+1); elif jogada == “*” and a * b != res: erros.append(i+1); elif jogada == “Impossível” and valid: erros.append(i+1); print(“Todos passaram” if not erros else “ “.join(map(str, erros)))",1
+458,115,"n = int(input()); erros = []; for i in range(n): a, op, b, eq, res, jogada = input().split(); a, b, res = int(a), int(b), int(res); if jogada == “+” and a + b != res: erros.append(i+1); print(“Todos passaram” if not erros else “ “.join(map(str, erros)))",0
+459,115,"n = int(input()); for i in range(n): a, op, b, eq, res, jogada = input().split(); print(“Todos passaram”)",0
+460,115,"n = int(input()); for i in range(n): a, op, b, eq, res, jogada = input().split(); if jogada == “+” and a + b == res: print(“Todos passaram”)",0
+461,116,"alphabet = input(); lamps = list(map(int, input().split())); print(””.join(alphabet[i-1] for i in lamps))",1
+462,116,"alphabet = input(); lamps = list(map(int, input().split())); print(””.join(alphabet[i] for i in lamps))",0
+463,116,"alphabet = input(); lamps = list(map(int, input().split())); print(””.join(alphabet[i-2] for i in lamps))",0
+464,116,"alphabet = input(); lamps = list(map(int, input().split())); print(””.join(alphabet[i+1] for i in lamps))",0
+465,117,"n, q = map(int, input().split()); notas = sorted(map(int, input().split()), reverse=True); print(”\n”.join(str(notas[int(input()) - 1]) for _ in range(q)))",1
+466,117,"n, q = map(int, input().split()); notas = sorted(map(int, input().split())); print(”\n”.join(str(notas[int(input()) - 1]) for _ in range(q)))",0
+467,117,"n, q = map(int, input().split()); notas = list(map(int, input().split())); print(”\n”.join(str(notas[int(input()) - 1]) for _ in range(q)))",0
+468,117,"n, q = map(int, input().split()); notas = sorted(map(int, input().split()), reverse=True); print(”\n”.join(str(notas[int(input())]) for _ in range(q)))",0
+469,118,"n = int(input()); a, b = map(int, input().split()); print(“impeachment” if a >= (2/3) * n else “acusacao arquivada”)",1
+470,118,"n = int(input()); a, b = map(int, input().split()); print(“acusacao arquivada” if a >= (2/3) * n else “impeachment”)",0
+471,118,"n = int(input()); a, b = map(int, input().split()); print(“impeachment” if b <= (1/3) * n else “acusacao arquivada”)",0
+472,118,"n = int(input()); a, b = map(int, input().split()); print(“acusacao arquivada” if b > a else “impeachment”)",0
+473,119,"m, n = map(int, input().split()); baralho_marcos = [list(map(int, input().split())) for _ in range(m)]; baralho_leonardo = [list(map(int, input().split())) for _ in range(m)]; carta_marcos = int(input()) - 1; carta_leonardo = int(input()) - 1; atributo = int(input()) - 1; if baralho_marcos[carta_marcos][atributo] > baralho_leonardo[carta_leonardo][atributo]: print(“Marcos”); elif baralho_marcos[carta_marcos][atributo] < baralho_leonardo[carta_leonardo][atributo]: print(“Leonardo”); else: print(“Empate”)",1
+474,119,"m, n = map(int, input().split()); baralho_marcos = [list(map(int, input().split())) for _ in range(m)]; baralho_leonardo = [list(map(int, input().split())) for _ in range(m)]; carta_marcos = int(input()); carta_leonardo = int(input()); atributo = int(input()); if baralho_marcos[carta_marcos][atributo] < baralho_leonardo[carta_leonardo][atributo]: print(“Marcos”); elif baralho_marcos[carta_marcos][atributo] > baralho_leonardo[carta_leonardo][atributo]: print(“Leonardo”); else: print(“Empate”)",0
+475,119,"m, n = map(int, input().split()); baralho_marcos = [list(map(int, input().split())) for _ in range(m)]; baralho_leonardo = [list(map(int, input().split())) for _ in range(m)]; carta_marcos = int(input()) - 1; carta_leonardo = int(input()) - 1; atributo = int(input()) - 1; print(“Empate”)",0
+476,119,"m, n = map(int, input().split()); baralho_marcos = [list(map(int, input().split())) for _ in range(m)]; baralho_leonardo = [list(map(int, input().split())) for _ in range(m)]; carta_marcos = int(input()) - 1; carta_leonardo = int(input()) - 1; atributo = int(input()) - 1; if baralho_marcos[carta_marcos][atributo] == baralho_leonardo[carta_leonardo][atributo]: print(“Leonardo”); else: print(“Marcos”)",0
+477,120,"n = int(input()); videos = [input().split() for _ in range(n)]; jogador = input(); print(sum(1 for game, user in videos if game == “CS” and user == jogador))",1
+478,120,"n = int(input()); videos = [input().split() for _ in range(n)]; jogador = input(); print(sum(1 for game, user in videos if game == “LOL” and user == jogador))",0
+479,120,"n = int(input()); videos = [input().split() for _ in range(n)]; jogador = input(); print(len([game for game, user in videos if game == “CS”]))",0
+480,120,n = int(input()); videos = [input().split() for _ in range(n)]; jogador = input(); print(len(videos)),0
+481,121,from math import log2; n = int(input()); print(int(log2(n))),1
+482,121,n = int(input()); count = 0; while n > 1: n //= 2; count += 1; print(count),0
+483,121,n = int(input()); print(len(bin(n)) - 3),0
+484,121,n = int(input()); print(n - 1),0
+485,122,"n, amin, amax = map(int, input().split()); print(sum(amin <= int(input()) <= amax for _ in range(n)))",1
+486,122,"n, amin, amax = map(int, input().split()); print(sum(amin < int(input()) < amax for _ in range(n)))",0
+487,122,"n, amin, amax = map(int, input().split()); print(len([1 for _ in range(n) if amin < int(input()) < amax]))",0
+488,122,"n, amin, amax = map(int, input().split()); print(len([1 for _ in range(n)]))",0
+489,123,"n = int(input()); record = 0; for i in range(1, n + 1): t, d = map(int, input().split()); v = d / t; if v > record: record = v; print(i)",1
+490,123,"n = int(input()); record = 0; for i in range(1, n + 1): t, d = map(int, input().split()); v = t / d; if v > record: record = v; print(i)",0
+491,123,"n = int(input()); record = 0; for i in range(1, n + 1): t, d = map(int, input().split()); v = d / t; if v < record: record = v; print(i)",0
+492,123,"n = int(input()); record = 0; for i in range(n): t, d = map(int, input().split()); v = d / t; if v > record: record = v; print(i + 1)",0
+493,124,print(“I am Toorg!”),1
+494,124,print(“I am Groot!”),0
+495,124,print(“42”),0
+496,124,print(“I have no answer!”),0
+497,125,if dodô == leo == pepper: print(“Empate”) elif dodô == “pedra” and leo == “tesoura” and pepper == “tesoura”: print(“Dodô venceu!”),1
+498,125,if dodô == “pedra” and leo == “tesoura” and pepper == “tesoura”: print(“Leo venceu!”) else: print(“Pepper venceu!”),0
+499,125,if dodô == leo == pepper: print(“Leo venceu!”),0
+500,125,print(“Empate” if dodô == leo == pepper else “Pepper venceu!”),0
+501,126,P = int(0.30 * R + 0.59 * G + 0.11 * B),1
+502,126,P = int((R + G + B) / 3),0
+503,126,"P = max(R, G, B)",0
+504,126,"P = min(R, G, B)",0
+505,127,"palavras = input().split(); consultas = input().split(); for consulta in consultas: matches = [p for p in palavras if p.startswith(consulta)]; print(len(matches), max(len(p) for p in matches) if matches else 0)",1
+506,127,"palavras = input().split(); consultas = input().split(); for consulta in consultas: matches = [p for p in palavras if consulta in p]; print(len(matches), max(len(p) for p in matches) if matches else 0)",0
+507,127,"palavras = input().split(); consultas = input().split(); for consulta in consultas: matches = [p for p in palavras if consulta.endswith(p)]; print(len(matches), max(len(p) for p in matches) if matches else 0)",0
+508,127,"palavras = input().split(); consultas = input().split(); for consulta in consultas: print(len(palavras), max(len(p) for p in palavras))",0
+509,128,print(len(set(input().split()))),1
+510,128,print(len(input().split())),0
+511,128,print(len([j for j in input().split() if j not in set(input().split())])),0
+512,128,print(len({j for j in input().split() if j.isalpha()})),0
+513,129,"scores = sorted(map(int, input().split()), reverse=True); min_vagas = int(input()); cutoff = scores[min_vagas - 1]; print(sum(1 for s in scores if s >= cutoff))",1
+514,129,"scores = sorted(map(int, input().split()), reverse=False); min_vagas = int(input()); cutoff = scores[min_vagas - 1]; print(sum(1 for s in scores if s <= cutoff))",0
+515,129,"scores = list(map(int, input().split())); min_vagas = int(input()); cutoff = scores[min_vagas - 1]; print(sum(1 for s in scores if s >= cutoff))",0
+516,129,"scores = sorted(map(int, input().split())); min_vagas = int(input()); print(len(scores))",0
+517,130,"funcionários = list(map(int, input().split())); tempos = [sum(abs(i - j) * funcionários[j] for j in range(3)) for i in range(3)]; print(tempos.index(min(tempos)) + 1)",1
+518,130,"funcionários = list(map(int, input().split())); tempos = [sum(abs(i + j) * funcionários[j] for j in range(3)) for i in range(3)]; print(tempos.index(min(tempos)) + 1)",0
+519,130,"funcionários = list(map(int, input().split())); print(1)",0
+520,130,"funcionários = list(map(int, input().split())); print(sum(funcionários))",0
+521,131,if 0 <= graus < 90: print(“madrugada”); elif 90 <= graus < 180: print(“manhã”); elif 180 <= graus < 270: print(“tarde”); else: print(“noite”),1
+522,131,if 0 <= graus < 180: print(“dia”); else: print(“noite”),0
+523,131,if graus < 90: print(“madrugada”); elif graus < 180: print(“manhã”); elif graus < 270: print(“tarde”),0
+524,131,if graus < 90: print(“noite”); elif graus < 180: print(“madrugada”); elif graus < 270: print(“tarde”),0
+525,132,"graus = int(input()); total_seconds = graus * 240; h, m, s = total_seconds // 3600, (total_seconds % 3600) // 60, total_seconds % 60; print(f”{h:02}:{m:02}:{s:02}”); if 0 <= graus < 90: print(“madrugada”); elif 90 <= graus < 180: print(“manhã”); elif 180 <= graus < 270: print(“tarde”); else: print(“noite”)",1
+526,132,"graus = int(input()); total_seconds = graus * 360; h, m, s = total_seconds // 3600, (total_seconds % 3600) // 60, total_seconds % 60; print(f”{h:02}:{m:02}:{s:02}”)",0
+527,132,graus = int(input()); print(f”{graus * 240 // 3600:02}:{(graus * 240 % 3600) // 60:02}:{(graus * 240 % 60):02}”); print(“madrugada”),0
+528,132,graus = int(input()); h = graus // 15; m = (graus % 15) * 4; print(f”{h:02}:{m:02}:00”),0
+529,133,"disponíveis = list(map(int, input().split())); pedidos = list(map(int, input().split())); print(sum(max(0, p - d) for p, d in zip(pedidos, disponíveis)))",1
+530,133,"disponíveis = list(map(int, input().split())); pedidos = list(map(int, input().split())); print(sum(max(0, d - p) for p, d in zip(pedidos, disponíveis)))",0
+531,133,"disponíveis = list(map(int, input().split())); pedidos = list(map(int, input().split())); print(sum(p - d for p, d in zip(pedidos, disponíveis)))",0
+532,133,"disponíveis = list(map(int, input().split())); pedidos = list(map(int, input().split())); print(max(pedidos) - sum(disponíveis))",0
+533,134,"veículos, turistas = 0, 0; while True: entrada = input(); if entrada == “FIM”: break; status, num = entrada.split(); num = int(num); if status == “ENTRA”: veículos += 1; turistas += num; elif status == “VOLTA”: veículos -= 1; turistas -= num; print(veículos, turistas)",1
+534,134,"veículos, turistas = 0, 0; while True: entrada = input(); if entrada == “FIM”: break; status, num = entrada.split(); num = int(num); if status == “VOLTA”: veículos += 1; turistas += num; elif status == “ENTRA”: veículos -= 1; turistas -= num; print(veículos, turistas)",0
+535,134,"veículos, turistas = 0, 0; while True: entrada = input(); if entrada == “FIM”: break; status, num = entrada.split(); num = int(num); if status == “ENTRA”: turistas += num; print(veículos, turistas)",0
+536,134,"veículos, turistas = 0, 0; while True: entrada = input(); if entrada == “FIM”: break; status, num = entrada.split(); num = int(num); if status == “VOLTA”: turistas -= num; print(veículos, turistas)",0
+537,135,"def is_prime(n): if n <= 1: return False; for i in range(2, int(n**0.5) + 1): if n % i == 0: return False; return True; moedas = list(map(int, input().split())); salto = int(input()); soma = sum(moedas[-1::-salto]); print(“Sim” if is_prime(soma) else “Não”)",1
+538,135,"moedas = list(map(int, input().split())); salto = int(input()); soma = sum(moedas[-1::-salto]); print(“Sim” if soma % 2 == 0 else “Não”)",0
+539,135,"def is_prime(n): if n <= 1: return False; for i in range(2, n): if n % i == 0: return False; return True; moedas = list(map(int, input().split())); salto = int(input()); soma = sum(moedas[1::salto]); print(“Sim” if is_prime(soma) else “Não”)",0
+540,135,"moedas = list(map(int, input().split())); salto = int(input()); soma = sum(moedas[-1::-salto]); print(“Sim” if soma % 3 == 0 else “Não”)",0
+541,136,"digito = int(input()); print([“Segunda-feira”, “Segunda-feira”, “Terça-feira”, “Terça-feira”, “Quarta-feira”, “Quarta-feira”, “Quinta-feira”, “Quinta-feira”, “Sexta-feira”, “Sexta-feira”][digito])",1
+542,136,"digito = int(input()); print([“Segunda-feira”, “Terça-feira”, “Quarta-feira”, “Quinta-feira”, “Sexta-feira”][digito % 5])",0
+543,136,"digito = int(input()); print(“Segunda-feira” if digito in [1, 2] else “Sexta-feira”)",0
+544,136,digito = int(input()); print(“Quarta-feira”),0
+545,137,"trabalhos = list(map(int, input().split())); total = sum(trabalhos); acumulado = 0; min_diff = float(“inf”); for t in trabalhos[:-1]: acumulado += t; min_diff = min(min_diff, abs(total - 2 * acumulado)); print(min_diff)",1
+546,137,"trabalhos = list(map(int, input().split())); total = sum(trabalhos); acumulado = 0; min_diff = float(“inf”); for t in trabalhos: acumulado += t; min_diff = min(min_diff, abs(total - acumulado)); print(min_diff)",0
+547,137,"trabalhos = list(map(int, input().split())); total = sum(trabalhos); acumulado = 0; for t in trabalhos: acumulado += t; print(abs(total - acumulado))",0
+548,137,"trabalhos = list(map(int, input().split())); print(sum(trabalhos[:len(trabalhos)//2]) - sum(trabalhos[len(trabalhos)//2:]))",0
+549,138,"n, t1, t2 = map(int, input().split()); print(“Sim” if t1 + t2 <= n else “Não”)",1
+550,138,"n, t1, t2 = map(int, input().split()); print(“Não” if t1 + t2 <= n else “Sim”)",0
+551,138,"n, t1, t2 = map(int, input().split()); print(“Sim” if t1 - t2 <= n else “Não”)",0
+552,138,"n, t1, t2 = map(int, input().split()); print(“Sim” if max(t1, t2) <= n else “Não”)",0
+553,139,binario = bin(numero)[2:]; print(max(len(s) for s in binario.split('0'))) ,1
+554,139,binario = bin(numero)[2:]; print(min(len(s) for s in binario.split('1'))) ,0
+555,139,binario = bin(numero)[2:]; print(sum(len(s) for s in binario.split('0'))) ,0
+556,139,binario = bin(numero)[2:]; print(max(len(s) for s in binario.split('1')) - 1) ,0
+557,140,"bolas = list(map(int, input().split())); renas = [“Dasher”, “Dancer”, “Prancer”, “Vixen”, “Comet”, “Cupid”, “Donner”, “Blitzen”, “Rudolph”]; total = sum(bolas); print(renas[(total - 1) % 9])",1
+558,140,"bolas = list(map(int, input().split())); renas = [“Dasher”, “Dancer”, “Prancer”, “Vixen”, “Comet”, “Cupid”, “Donner”, “Blitzen”, “Rudolph”]; total = sum(bolas); print(renas[total % 9])",0
+559,140,"bolas = list(map(int, input().split())); renas = [“Dasher”, “Dancer”, “Prancer”, “Vixen”, “Comet”, “Cupid”, “Donner”, “Blitzen”, “Rudolph”]; print(renas[sum(bolas)])",0
+560,140,"bolas = list(map(int, input().split())); print(“Rudolph”)",0
+561,141,"fórmula = input(); if fórmula == 'ClF3': print(""Perigoso"") else: print(""Seguro"")",1
+562,141,"fórmula = input().split('F'); if 'Cl' in fórmula and 'F3' in fórmula: print(""Perigoso"") else: print(""Seguro"")",0
+563,141,"fórmula = input(); if fórmula[0] == 'C' and fórmula[1] == 'l': if fórmula[-1] == '3': print(""Perigoso"") else: print(""Seguro"")",0
+564,141,"fórmula = input().split('Fe'); if 'Fe' in fórmula: print(""Perigoso"") else: print(""Seguro"")",0
+565,142,"A, B, C = map(int, input().split()); print(f”A = {A}, B = {B}, C = {C}”); print(f”A = {A:10}, B = {B:10}, C = {C:10}”); print(f”A = {A:010}, B = {B:010}, C = {C:010}”); print(f”A = {A:<10}, B = {B:<10}, C = {C:<10}”)",1
+566,142,"A, B, C = map(int, input().split()); print(f”A = {A}, B = {B}, C = {C}”); print(f”A = {A:10}, B = {B:10}, C = {C:10}”); print(f”A = {A:10}, B = {B:10}, C = {C:10}”); print(f”A = {A:10}, B = {B:10}, C = {C:10}”)",0
+567,142,"A, B, C = map(int, input().split()); print(f”A = {A}, B = {B}, C = {C}”); print(f”A = {A:<10}, B = {B:<10}, C = {C:<10}”); print(f”A = {A:10}, B = {B:10}, C = {C:10}”); print(f”A = {A:010}, B = {B:010}, C = {C:010}”)",0
+568,142,"A, B, C = map(int, input().split()); print(f”A = {A}, B = {B}, C = {C}”); print(f”A = {A:10}, B = {B:10}, C = {C:10}”); print(f”A = {A:<10}, B = {B:<10}, C = {C:<10}”); print(f”A = {A:10}, B = {B:10}, C = {C:10}”)",0
+569,143,"A, B = map(float, input().split()); C, D = map(float, input().split()); print(f”A = {A}, B = {B}”); print(f”C = {C}, D = {D}”); print(f”A = {A:.1f}, B = {B:.1f}”); print(f”C = {C:.1f}, D = {D:.1f}”); print(f”A = {A:.2f}, B = {B:.2f}”); print(f”C = {C:.2f}, D = {D:.2f}”); print(f”A = {A:.3f}, B = {B:.3f}”); print(f”C = {C:.3f}, D = {D:.3f}”); print(f”A = {A:.3E}, B = {B:.3E}”); print(f”C = {C:.3E}, D = {D:.3E}”); print(f”A = {int(A)}, B = {int(B)}”); print(f”C = {int(C)}, D = {int(D)}”)",1
+570,143,"A, B = map(float, input().split()); C, D = map(float, input().split()); print(f”A = {A:.2f}, B = {B:.2f}”); print(f”C = {C:.2f}, D = {D:.2f}”)",0
+571,143,"A, B = map(float, input().split()); C, D = map(float, input().split()); print(f”A = {A}, B = {B}”); print(f”C = {C}, D = {D}”)",0
+572,143,"A, B = map(float, input().split()); C, D = map(float, input().split()); print(f”A = {int(A)}, B = {int(B)}”); print(f”C = {int(C)}, D = {int(D)}”)",0
+573,144,"number = input(); integer, decimal = number.split(’.’); print(f”{decimal}.{integer}”)",1
+574,144,"number = input(); integer, decimal = number.split(’.’); print(f”{integer}.{decimal}”)",0
+575,144,number = input(); print(”.”.join(number.split(’.’)[::-1])),0
+576,144,"number = input(); integer, decimal = number.split(’.’); print(f”{decimal}”)",0
+577,145,"cpf = input(); cpf_parts = cpf.split(’.’); first_part, second_part = cpf_parts[0], cpf_parts[1]; third_part, last_part = cpf_parts[2].split(’-’); print(first_part, second_part, third_part, last_part, sep=’\n’)",1
+578,145,"cpf = input(); first_part, second_part = cpf.split(’.’); third_part, last_part = second_part.split(’-’); print(first_part, third_part, second_part, last_part)",0
+579,145,"cpf = input(); first_part, rest = cpf.split(’.’); second_part, third_part = rest.split(’-’); print(first_part, second_part, third_part)",0
+580,145,"cpf = input(); first_part, second_part = cpf.split(’.’); third_part, last_part = second_part.split(’-’); print(first_part, second_part, third_part, last_part, sep=’\n’)",0
+581,146,"data = input(); day, month, year = data.split(’/’); print(f”{month}/{day}/{year}”); print(f”{year}/{month}/{day}”); print(f”{day}-{month}-{year}”)",1
+582,146,"data = input(); day, month, year = data.split(’/’); print(f”{day}/{month}/{year}”); print(f”{year}/{month}/{day}”); print(f”{day}-{month}-{year}”)",0
+583,146,"data = input(); day, month, year = data.split(’/’); print(f”{month}/{day}/{year}”); print(f”{year}-{month}-{day}”); print(f”{day}-{month}-{year}”)",0
+584,146,"data = input(); day, month, year = data.split(’/’); print(f”{month}/{day}/{year}”); print(f”{day}-{month}-{year}”); print(f”{year}/{month}/{day}”)",0
+585,147,"frase = input(); parte1, parte2 = frase.split(’,’); print(parte1.strip()); print(parte2.strip())",1
+586,147,"frase = input(); parte1, parte2 = frase.split(’,’); print(parte1); print(parte2)",0
+587,147,"frase = input(); parte1, parte2 = frase.split(’,’); print(parte2.strip()); print(parte1.strip())",0
+588,147,"frase = input(); print(frase.split(’,’)[0]); print(frase.split(’,’)[1])",0
+589,148,nomes = [input() for _ in range(10)]; print(nomes[2]); print(nomes[6]); print(nomes[8]),1
+590,148,nomes = [input() for _ in range(10)]; print(nomes[3]); print(nomes[7]); print(nomes[9]),0
+591,148,nomes = [input() for _ in range(10)]; print(nomes[1]); print(nomes[5]); print(nomes[7]),0
+592,148,nomes = [input() for _ in range(10)]; print(nomes[0]); print(nomes[6]); print(nomes[9]),0
+593,149,"largura_circuito, comprimento_circuito = map(int, input().split()); largura_placa, comprimento_placa = map(int, input().split()); if largura_circuito <= largura_placa and comprimento_circuito <= comprimento_placa: print(“Sim”); else: print(“Nao”)",1
+594,149,"largura_circuito, comprimento_circuito = map(int, input().split()); largura_placa, comprimento_placa = map(int, input().split()); if largura_circuito >= largura_placa or comprimento_circuito > comprimento_placa: print(“Nao”); else: print(“Sim”)",0
+595,149,"largura_circuito, comprimento_circuito = map(int, input().split()); largura_placa, comprimento_placa = map(int, input().split()); if largura_circuito == largura_placa and comprimento_circuito == comprimento_placa: print(“Sim”); else: print(“Nao”)",0
+596,149,"largura_circuito, comprimento_circuito = map(int, input().split()); largura_placa, comprimento_placa = map(int, input().split()); if largura_circuito != largura_placa and comprimento_circuito != comprimento_placa: print(“Nao”); else: print(“Sim”)",0
+597,150,A resposta é o número total de figurinhas menos o número de figurinhas diferentes compradas.,1
+598,150,A resposta é o número total de figurinhas menos o número de figurinhas compradas.,0
+599,150,A resposta é o número total de figurinhas que foram compradas.,0
+600,150,"A resposta é o número total de espaços no álbum, sem considerar as repetições de figurinhas compradas.",0
+601,151,"A resposta é o número total de escadinhas, considerando apenas as sequências mais longas.",1
+602,151,A resposta é o número total de sequências de números consecutivos que formam uma escadinha.,0
+603,151,A resposta é o número total de elementos que formam as escadinhas mais longas.,0
+604,151,"A resposta é o número de escadinhas que podem ser formadas, mesmo que sejam sub-sequências de outras escadinhas.",0

@@ -1,11 +1,10 @@
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
+import random
 
 def plot_student_performance_bar(data, title, xlabel, ylabel, filename):
-    """
-    Gráfico de barras mostrando desempenho dos estudantes por questão.
-    """
+
     plt.figure(figsize=(10, 6))
     plt.bar(data["x"], data["y"], color='skyblue', edgecolor='black')
     plt.title(title, fontsize=14)
@@ -18,25 +17,42 @@ def plot_student_performance_bar(data, title, xlabel, ylabel, filename):
     plt.close()
 
 def plot_performance_evolution(data, title, xlabel, ylabel, filename):
-    """
-    Gráfico de evolução do desempenho ao longo do tempo.
-    """
+    excellent_students = {k: v for k, v in data.items() if "Estudante" in k and int(k.split()[1]) in range(1, 6)}
+    medium_students = {k: v for k, v in data.items() if "Estudante" in k and int(k.split()[1]) in range(6, 26)}
+    low_students = {k: v for k, v in data.items() if "Estudante" in k and int(k.split()[1]) in range(26, 36)}
+
+    selected_students = {}
+    selected_students.update(random.sample(excellent_students.items(), min(3, len(excellent_students))))
+    selected_students.update(random.sample(medium_students.items(), min(4, len(medium_students))))
+    selected_students.update(random.sample(low_students.items(), min(3, len(low_students))))
+
     plt.figure(figsize=(10, 6))
-    for label, values in data.items():
-        plt.plot(values["x"], values["y"], marker='o', label=label)
+    
+    for label, values in selected_students.items():
+        student_id = label.split()[1]
+        
+        if int(student_id) in range(1, 6):
+            group_name = "Excellent"
+        elif int(student_id) in range(6, 26):
+            group_name = "Medium"
+        else:
+            group_name = "Low"
+
+        new_label = f"Estudante {student_id} (Grupo {group_name})"
+        
+        plt.plot(values["x"], values["y"], marker='o', label=new_label)
+
     plt.title(title, fontsize=14)
     plt.xlabel(xlabel, fontsize=12)
     plt.ylabel(ylabel, fontsize=12)
-    plt.legend()
+    plt.legend(loc="upper left", bbox_to_anchor=(1, 1))
     plt.grid(True, linestyle='--', alpha=0.7)
     plt.tight_layout()
     plt.savefig(filename)
     plt.close()
 
 def plot_heatmap(data, title, xlabel, ylabel, filename):
-    """
-    Heatmap de ajuste de dificuldade.
-    """
+
     plt.figure(figsize=(12, 8))
     sns.heatmap(data, annot=True, fmt="d", cmap="coolwarm", cbar=True)
     plt.title(title, fontsize=14)
@@ -73,9 +89,7 @@ def plot_radar(data, labels, title, filename):
     plt.close()
 
 def plot_boxplot(data, title, xlabel, ylabel, filename):
-    """
-    Gráfico de Boxplot mostrando distribuição dos resultados.
-    """
+
     plt.figure(figsize=(10, 6))
     sns.boxplot(data=data, palette="Set2")
     plt.title(title, fontsize=14)
@@ -86,9 +100,7 @@ def plot_boxplot(data, title, xlabel, ylabel, filename):
     plt.close()
 
 def plot_correlation_scatter(x, y, xlabel, ylabel, title, filename):
-    """
-    Gráfico de dispersão para relação entre dificuldade e desempenho.
-    """
+
     plt.figure(figsize=(10, 6))
     sns.scatterplot(x=x, y=y, s=100, alpha=0.7, edgecolor='black')
     sns.regplot(x=x, y=y, scatter=False, color='red')
@@ -100,9 +112,7 @@ def plot_correlation_scatter(x, y, xlabel, ylabel, title, filename):
     plt.close()
 
 def plot_pie(data, labels, title, filename):
-    """
-    Gráfico de pizza mostrando distribuição de dificuldades.
-    """
+
     plt.figure(figsize=(8, 8))
     plt.pie(data, labels=labels, autopct='%1.1f%%', startangle=140, colors=sns.color_palette("Set3"))
     plt.title(title, fontsize=14)
